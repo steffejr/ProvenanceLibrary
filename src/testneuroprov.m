@@ -20,5 +20,5 @@ input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,InputName,Inpu
 
 calllib('libneuroprov','freeProcess',p_proc);
 
-calllib('libneuroprov','printProvenance',p_prov, 'MATLABtestneuroprov.xml');
+calllib('libneuroprov','printProvenance',p_prov, 'MATLABtestneuroprov2.xml');
 calllib('libneuroprov','delProvenanceObject',p_prov);
