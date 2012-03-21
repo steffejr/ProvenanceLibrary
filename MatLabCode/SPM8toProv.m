@@ -18,7 +18,7 @@ end
 %libfunctionsview shrlibsample
 %% 
 OutDir = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/XMLFiles';
-OutName = 'TestSPMProv_032112_SEGMENT';
+OutName = 'SPMProv_032112_SEGMENT_Only';
 OutFile = fullfile(OutDir,[OutName '.xml']);
 % Create the top level container
 p_prov = calllib('libneuroprov','newProvenanceObject','OutName');
@@ -56,6 +56,7 @@ for i = 1:Nsteps
             Levels{count} = char(temp);
         end
     end
+    % Get the help info
     
     ProcessInput = ['matlabbatch{' num2str(i) '}'];
     for j = 1:length(Levels)
@@ -67,7 +68,19 @@ for i = 1:Nsteps
     
     Parameters = fieldnames(eval(ProcessInput));
     for j = 1:length(Parameters)
+
         D = eval([ProcessInput '.' Parameters{j}]);
+        % determine if this is the output for the segment tool
+        if strmatch(Parameters{j},'output') & strmatch(Levels{end},'preproc')
+            InputFile = eval([ProcessInput '.' Parameters{1}]);
+            OutputStruct = eval([ProcessInput '.' Parameters{j}]);
+        %    OutputFiles = subfnFindSegmentOutputs(InputFile,OutputStruct);
+            [OutputFiles OutputLabels] = subfnFindSegmentOutputs(InputFile,OutputStruct)
+        
+            for kk = 1:length(OutputFiles)
+                input_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',OutputFiles{kk},OutputLabels{kk});
+            end
+        end
         % if D is a cell assume it is image data
         if iscell(D)
             for k = 1:length(D)

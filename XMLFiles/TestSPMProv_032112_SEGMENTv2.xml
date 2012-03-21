@@ -2,8 +2,8 @@
 <prov:container xmlns:prov="http://openprovenance.org/prov-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ni="https://github.com/INCF/ProvenanceLibrary/wiki/terms" prov:id="OutName">
   <prov:records>
     <prov:activity prov:id="a_0">
-      <prov:startTime>21-Mar-2012 10:48:16</prov:startTime>
-      <prov:endTime>21-Mar-2012 10:48:16</prov:endTime>
+      <prov:startTime>21-Mar-2012 11:46:54</prov:startTime>
+      <prov:endTime>21-Mar-2012 11:46:54</prov:endTime>
       <prov:label>matlabbatch{1}.spm.spatial.preproc</prov:label>
       <ni:GM>1  1  1</ni:GM>
       <ni:WM>1  1  1</ni:WM>
@@ -86,52 +86,52 @@
       </prov:used>
     </prov:dependencies>
     <prov:entity prov:id="e_1">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Grey Matter: Modulated Normalised</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/c1P00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_2">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Grey Matter: Unmodulated Normalised</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/mwc1P00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_3">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Grey Matter: Native Space</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/wc1P00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_4">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">White Matter: Modulated Normalised</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/c2P00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_5">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">White Matter: Unmodulated Normalised</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/mwc2P00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_6">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">White Matter: Native Space</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/wc2P00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_7">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Cerebro-Spinal Fluid: Modulated Normalised</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/c3P00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_8">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Cerebro-Spinal Fluid: Unmodulated Normalised</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/mwc3P00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_9">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Cerebro-Spinal Fluid: Native Space</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/wc3P00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_10">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Bias Corrected</prov:type>
       <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/mP00004218_S0001_T1_1</ni:value>
     </prov:entity>
