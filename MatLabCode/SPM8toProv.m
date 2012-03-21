@@ -5,11 +5,12 @@ clear all
 if not(libisloaded('libprov'))
     loadlibrary('/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/libprov.so','/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/provenance.h')
 end
-libfunctionsview libprov
+%libfunctionsview libprov
+
 if not(libisloaded('libneuroprov'))
     loadlibrary('/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/libneuroprov.so','/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/neuroprovenance.h')
 end
-libfunctionsview libneuroprov
+%libfunctionsview libneuroprov
 
 if not(libisloaded('shrlibsample'))
     addpath /usr/local/matlab/extern/examples/shrlib/
@@ -18,7 +19,7 @@ end
 %libfunctionsview shrlibsample
 %% 
 OutDir = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/XMLFiles';
-OutName = 'SPMProv_032112_SEGMENT_Only';
+OutName = 'SPMProv_032112_SHORTv2';
 OutFile = fullfile(OutDir,[OutName '.xml']);
 % Create the top level container
 p_prov = calllib('libneuroprov','newProvenanceObject','OutName');
@@ -27,6 +28,7 @@ p_prov = calllib('libneuroprov','newProvenanceObject','OutName');
 
 % Locate the FILLED IN SPM job
 JobFile = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/SPMJobs/SegmentONLYJob_FilledInJob.m'
+JobFile = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/SPMJobs/TestPreProcessSHORT_FilledInJob.m'
 % Execute the job file so that it creates the matlabbatch
 [PathName FileName] = fileparts(JobFile);
 cd(PathName)
@@ -68,7 +70,6 @@ for i = 1:Nsteps
     
     Parameters = fieldnames(eval(ProcessInput));
     for j = 1:length(Parameters)
-
         D = eval([ProcessInput '.' Parameters{j}]);
         % determine if this is the output for the segment tool
         if strmatch(Parameters{j},'output') & strmatch(Levels{end},'preproc')
@@ -96,8 +97,27 @@ for i = 1:Nsteps
             for k = 1:length(Dfieldnames)
                 Efield = getfield(D,Dfieldnames{k});
                 if iscell(Efield)
+                    % Therefore this is most likely images.
+                    %ImageDescription = SM.val{j}.val{k}.name;
+                    % Check the help to see if there is a description for
+                    % this input image
+                    
+                    try 
+                        ProcessName = '';
+                        ProcessName = Levels{3};
+%                         if length(Levels)>3
+%                             for mm = 4:length(Levels)
+%                                 ProcessName = [ProcessName '_' Levels{mm}];
+%                             end
+%                         end
+                       SM = eval(['spm_cfg_' ProcessName]);
+                       
+                       ImageDescription  = SM.val{j}.val{k}.name;
+                    catch 
+                        ImageDescription = 'N/A';
+                    end
                     for m = 1:length(Efield)
-                       input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',Efield{m},'N/A'); 
+                       input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',Efield{m},ImageDescription); 
                     end
                 else
                     calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Dfieldnames{k},num2str(Efield));

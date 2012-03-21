@@ -2,8 +2,8 @@
 <prov:container xmlns:prov="http://openprovenance.org/prov-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ni="https://github.com/INCF/ProvenanceLibrary/wiki/terms" prov:id="OutName">
   <prov:records>
     <prov:activity prov:id="a_0">
-      <prov:startTime>21-Mar-2012 11:47:47</prov:startTime>
-      <prov:endTime>21-Mar-2012 11:47:47</prov:endTime>
+      <prov:startTime>21-Mar-2012 11:58:26</prov:startTime>
+      <prov:endTime>21-Mar-2012 11:58:26</prov:endTime>
       <prov:label>matlabbatch{1}.spm.spatial.preproc</prov:label>
       <ni:GM>1  1  1</ni:GM>
       <ni:WM>1  1  1</ni:WM>
@@ -136,22 +136,22 @@
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/mP00004218_S0001_T1_1</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_11">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Tissue probability maps</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data5/spm8/tpm/grey.nii</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_12">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Tissue probability maps</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data5/spm8/tpm/white.nii</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_13">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Tissue probability maps</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data5/spm8/tpm/csf.nii</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_14">
-      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <prov:type xsi:type="xsd:string">Masking image</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
       <ni:value xsi:type="xsd:string"></ni:value>
     </prov:entity>
