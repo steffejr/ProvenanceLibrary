@@ -3,11 +3,11 @@ clear functions
 clear all
 % Load up the libraries needed
 if not(libisloaded('libprov'))
-    loadlibrary('/share/data/data9/jason/SPM_Provenance/ProvenanceLibrary/src/libprov.so','/share/data/data9/jason/SPM_Provenance/ProvenanceLibrary/src/provenance.h')
+    loadlibrary('/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/libprov.so','/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/provenance.h')
 end
 libfunctionsview libprov
 if not(libisloaded('libneuroprov'))
-    loadlibrary('/share/data/data9/jason/SPM_Provenance/ProvenanceLibrary/src/libneuroprov.so','/share/data/data9/jason/SPM_Provenance/ProvenanceLibrary/src/neuroprovenance.h')
+    loadlibrary('/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/libneuroprov.so','/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/neuroprovenance.h')
 end
 libfunctionsview libneuroprov
 
@@ -17,7 +17,7 @@ if not(libisloaded('shrlibsample'))
 end
 %libfunctionsview shrlibsample
 %% 
-OutDir = '/share/data/data9/jason/SPM_Provenance/XMLFiles';
+OutDir = '/share/data/data9/jaso/SPM_Provenance/XMLFiles';
 OutName = 'TestSPMProv_022212';
 OutFile = fullfile(OutDir,[OutName '.xml']);
 % Create the top level container
@@ -26,7 +26,7 @@ p_prov = calllib('libneuroprov','newProvenanceObject','OutName');
 %calllib('libprov','newAgent',p_prov);
 
 % Locate the FILLED IN SPM job
-JobFile = '/share/data/data9/jason/SPM_Provenance/SPMJobs/PreprocessECF_FilledInJob.m'
+JobFile = '/share/data/users/js2746_Jason/SPM_Provenance/SPMJobs/PreprocessECF_FilledInJob.m'
 % Execute the job file so that it creates the matlabbatch
 [PathName FileName] = fileparts(JobFile);
 cd(PathName)
