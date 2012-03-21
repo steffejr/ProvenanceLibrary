@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prov:container xmlns:prov="http://openprovenance.org/prov-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ni="https://github.com/INCF/ProvenanceLibrary/wiki/terms" prov:id="OutName">
+  <prov:records>
+    <prov:activity prov:id="a_0">
+      <prov:startTime>21-Mar-2012 09:09:02</prov:startTime>
+      <prov:endTime>21-Mar-2012 09:09:02</prov:endTime>
+      <prov:label>matlabbatch{1}.spm.spatial.preproc</prov:label>
+      <ni:GM>1  1  1</ni:GM>
+      <ni:WM>1  1  1</ni:WM>
+      <ni:CSF>1  1  1</ni:CSF>
+      <ni:biascor>1</ni:biascor>
+      <ni:cleanup>0</ni:cleanup>
+      <ni:ngaus>2224</ni:ngaus>
+      <ni:regtype>mni</ni:regtype>
+      <ni:warpreg>1</ni:warpreg>
+      <ni:warpco>25</ni:warpco>
+      <ni:biasreg>0.0001</ni:biasreg>
+      <ni:biasfwhm>60</ni:biasfwhm>
+      <ni:samp>3</ni:samp>
+    </prov:activity>
+    <prov:entity prov:id="e_0">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:dependencies>
+      <prov:used prov:id="u_0">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_0"/>
+      </prov:used>
+      <prov:used prov:id="u_1">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_1"/>
+      </prov:used>
+      <prov:used prov:id="u_2">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_2"/>
+      </prov:used>
+      <prov:used prov:id="u_3">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_3"/>
+      </prov:used>
+      <prov:used prov:id="u_4">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_4"/>
+      </prov:used>
+      <prov:used prov:id="u_5">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_5"/>
+      </prov:used>
+      <prov:used prov:id="u_6">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_6"/>
+      </prov:used>
+      <prov:used prov:id="u_7">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_7"/>
+      </prov:used>
+      <prov:used prov:id="u_8">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_8"/>
+      </prov:used>
+      <prov:used prov:id="u_9">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_9"/>
+      </prov:used>
+      <prov:used prov:id="u_10">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_10"/>
+      </prov:used>
+      <prov:used prov:id="u_11">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_11"/>
+      </prov:used>
+      <prov:used prov:id="u_12">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_12"/>
+      </prov:used>
+      <prov:used prov:id="u_13">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_13"/>
+      </prov:used>
+      <prov:used prov:id="u_14">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_14"/>
+      </prov:used>
+      <prov:used prov:id="u_15">
+        <prov:activity prov:ref="a_1"/>
+        <prov:entity prov:ref="e_15"/>
+      </prov:used>
+      <prov:used prov:id="u_16">
+        <prov:activity prov:ref="a_1"/>
+        <prov:entity prov:ref="e_16"/>
+      </prov:used>
+      <prov:used prov:id="u_17">
+        <prov:activity prov:ref="a_2"/>
+        <prov:entity prov:ref="e_17"/>
+      </prov:used>
+      <prov:used prov:id="u_18">
+        <prov:activity prov:ref="a_2"/>
+        <prov:entity prov:ref="e_18"/>
+      </prov:used>
+      <prov:used prov:id="u_19">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_19"/>
+      </prov:used>
+      <prov:used prov:id="u_20">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_20"/>
+      </prov:used>
+      <prov:used prov:id="u_21">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_21"/>
+      </prov:used>
+      <prov:used prov:id="u_22">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_22"/>
+      </prov:used>
+      <prov:used prov:id="u_23">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_23"/>
+      </prov:used>
+      <prov:used prov:id="u_24">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_24"/>
+      </prov:used>
+      <prov:used prov:id="u_25">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_25"/>
+      </prov:used>
+      <prov:used prov:id="u_26">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_26"/>
+      </prov:used>
+      <prov:used prov:id="u_27">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_27"/>
+      </prov:used>
+      <prov:used prov:id="u_28">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_28"/>
+      </prov:used>
+      <prov:used prov:id="u_29">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_29"/>
+      </prov:used>
+      <prov:used prov:id="u_30">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_30"/>
+      </prov:used>
+      <prov:used prov:id="u_31">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_31"/>
+      </prov:used>
+      <prov:used prov:id="u_32">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_32"/>
+      </prov:used>
+      <prov:used prov:id="u_33">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_33"/>
+      </prov:used>
+      <prov:used prov:id="u_34">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_34"/>
+      </prov:used>
+      <prov:used prov:id="u_35">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_35"/>
+      </prov:used>
+      <prov:used prov:id="u_36">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_36"/>
+      </prov:used>
+      <prov:used prov:id="u_37">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_37"/>
+      </prov:used>
+      <prov:used prov:id="u_38">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_38"/>
+      </prov:used>
+      <prov:used prov:id="u_39">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_39"/>
+      </prov:used>
+      <prov:used prov:id="u_40">
+        <prov:activity prov:ref="a_3"/>
+        <prov:entity prov:ref="e_40"/>
+      </prov:used>
+      <prov:used prov:id="u_41">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_41"/>
+      </prov:used>
+      <prov:used prov:id="u_42">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_42"/>
+      </prov:used>
+      <prov:used prov:id="u_43">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_43"/>
+      </prov:used>
+      <prov:used prov:id="u_44">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_44"/>
+      </prov:used>
+      <prov:used prov:id="u_45">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_45"/>
+      </prov:used>
+      <prov:used prov:id="u_46">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_46"/>
+      </prov:used>
+      <prov:used prov:id="u_47">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_47"/>
+      </prov:used>
+      <prov:used prov:id="u_48">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_48"/>
+      </prov:used>
+      <prov:used prov:id="u_49">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_49"/>
+      </prov:used>
+      <prov:used prov:id="u_50">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_50"/>
+      </prov:used>
+      <prov:used prov:id="u_51">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_51"/>
+      </prov:used>
+      <prov:used prov:id="u_52">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_52"/>
+      </prov:used>
+      <prov:used prov:id="u_53">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_53"/>
+      </prov:used>
+      <prov:used prov:id="u_54">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_54"/>
+      </prov:used>
+      <prov:used prov:id="u_55">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_55"/>
+      </prov:used>
+      <prov:used prov:id="u_56">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_56"/>
+      </prov:used>
+      <prov:used prov:id="u_57">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_57"/>
+      </prov:used>
+      <prov:used prov:id="u_58">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_58"/>
+      </prov:used>
+      <prov:used prov:id="u_59">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_59"/>
+      </prov:used>
+      <prov:used prov:id="u_60">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_60"/>
+      </prov:used>
+      <prov:used prov:id="u_61">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_61"/>
+      </prov:used>
+      <prov:used prov:id="u_62">
+        <prov:activity prov:ref="a_4"/>
+        <prov:entity prov:ref="e_62"/>
+      </prov:used>
+      <prov:used prov:id="u_63">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_63"/>
+      </prov:used>
+      <prov:used prov:id="u_64">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_64"/>
+      </prov:used>
+      <prov:used prov:id="u_65">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_65"/>
+      </prov:used>
+      <prov:used prov:id="u_66">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_66"/>
+      </prov:used>
+      <prov:used prov:id="u_67">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_67"/>
+      </prov:used>
+      <prov:used prov:id="u_68">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_68"/>
+      </prov:used>
+      <prov:used prov:id="u_69">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_69"/>
+      </prov:used>
+      <prov:used prov:id="u_70">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_70"/>
+      </prov:used>
+      <prov:used prov:id="u_71">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_71"/>
+      </prov:used>
+      <prov:used prov:id="u_72">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_72"/>
+      </prov:used>
+      <prov:used prov:id="u_73">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_73"/>
+      </prov:used>
+      <prov:used prov:id="u_74">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_74"/>
+      </prov:used>
+      <prov:used prov:id="u_75">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_75"/>
+      </prov:used>
+      <prov:used prov:id="u_76">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_76"/>
+      </prov:used>
+      <prov:used prov:id="u_77">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_77"/>
+      </prov:used>
+      <prov:used prov:id="u_78">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_78"/>
+      </prov:used>
+      <prov:used prov:id="u_79">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_79"/>
+      </prov:used>
+      <prov:used prov:id="u_80">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_80"/>
+      </prov:used>
+      <prov:used prov:id="u_81">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_81"/>
+      </prov:used>
+      <prov:used prov:id="u_82">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_82"/>
+      </prov:used>
+      <prov:used prov:id="u_83">
+        <prov:activity prov:ref="a_5"/>
+        <prov:entity prov:ref="e_83"/>
+      </prov:used>
+    </prov:dependencies>
+    <prov:entity prov:id="e_1">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,2</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_2">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,3</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_3">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,4</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_4">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,5</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_5">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,6</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_6">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,7</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_7">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,8</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_8">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,9</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_9">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_10">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/P00004218_S0001_T1_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_11">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data5/spm8/tpm/grey.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_12">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data5/spm8/tpm/white.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_13">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data5/spm8/tpm/csf.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_14">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string"></ni:value>
+    </prov:entity>
+    <prov:activity prov:id="a_1">
+      <prov:startTime>21-Mar-2012 09:09:02</prov:startTime>
+      <prov:endTime>21-Mar-2012 09:09:02</prov:endTime>
+      <prov:label>matlabbatch{2}.spm.temporal.st</prov:label>
+    </prov:activity>
+    <prov:entity prov:id="e_15">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_16">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:activity prov:id="a_2">
+      <prov:startTime>21-Mar-2012 09:09:02</prov:startTime>
+      <prov:endTime>21-Mar-2012 09:09:02</prov:endTime>
+      <prov:label>matlabbatch{3}.spm.spatial.realign.estwrite</prov:label>
+      <ni:quality>0.9</ni:quality>
+      <ni:sep>4</ni:sep>
+      <ni:fwhm>5</ni:fwhm>
+      <ni:rtm>1</ni:rtm>
+      <ni:interp>2</ni:interp>
+      <ni:wrap>0  0  0</ni:wrap>
+      <ni:weight></ni:weight>
+      <ni:which>0  1</ni:which>
+      <ni:interp>4</ni:interp>
+      <ni:wrap>0  0  0</ni:wrap>
+      <ni:mask>1</ni:mask>
+      <ni:prefix>r</ni:prefix>
+    </prov:activity>
+    <prov:entity prov:id="e_17">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_18">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:activity prov:id="a_3">
+      <prov:startTime>21-Mar-2012 09:09:02</prov:startTime>
+      <prov:endTime>21-Mar-2012 09:09:02</prov:endTime>
+      <prov:label>matlabbatch{4}.spm.spatial.coreg.estimate</prov:label>
+      <ni:cost_fun>nmi</ni:cost_fun>
+      <ni:sep>4  2</ni:sep>
+      <ni:tol>0.02        0.02        0.02       0.001       0.001       0.001        0.01        0.01        0.01       0.001       0.001       0.001</ni:tol>
+      <ni:fwhm>7  7</ni:fwhm>
+    </prov:activity>
+    <prov:entity prov:id="e_19">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/mP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_20">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/meanaP00004218_S0001_ECF_r1_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_21">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_22">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,2</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_23">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,3</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_24">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,4</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_25">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,5</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_26">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,6</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_27">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,7</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_28">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,8</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_29">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,9</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_30">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_31">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_32">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,2</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_33">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,3</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_34">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,4</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_35">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,5</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_36">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,6</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_37">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,7</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_38">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,8</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_39">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,9</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_40">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:activity prov:id="a_4">
+      <prov:startTime>21-Mar-2012 09:09:02</prov:startTime>
+      <prov:endTime>21-Mar-2012 09:09:02</prov:endTime>
+      <prov:label>matlabbatch{5}.spm.spatial.normalise.write</prov:label>
+      <ni:preserve>0</ni:preserve>
+      <ni:bb>- 7788  - 1 1726    - 5805</ni:bb>
+      <ni:vox>2  2  2</ni:vox>
+      <ni:interp>1</ni:interp>
+      <ni:wrap>0  0  0</ni:wrap>
+      <ni:prefix>w</ni:prefix>
+    </prov:activity>
+    <prov:entity prov:id="e_41">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1_seg_sn.mat</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_42">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/meanaP00004218_S0001_ECF_r1_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_43">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_44">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,2</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_45">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,3</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_46">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,4</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_47">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,5</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_48">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,6</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_49">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,7</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_50">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,8</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_51">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,9</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_52">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_53">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_54">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,2</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_55">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,3</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_56">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,4</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_57">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,5</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_58">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,6</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_59">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,7</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_60">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,8</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_61">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,9</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_62">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:activity prov:id="a_5">
+      <prov:startTime>21-Mar-2012 09:09:02</prov:startTime>
+      <prov:endTime>21-Mar-2012 09:09:02</prov:endTime>
+      <prov:label>matlabbatch{6}.spm.spatial.smooth</prov:label>
+    </prov:activity>
+    <prov:entity prov:id="e_63">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/wmeanaP00004218_S0001_ECF_r1_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_64">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_65">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,2</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_66">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,3</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_67">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,4</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_68">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,5</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_69">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,6</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_70">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,7</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_71">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,8</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_72">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,9</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_73">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,10</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_74">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_75">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,2</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_76">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,3</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_77">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,4</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_78">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,5</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_79">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,6</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_80">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,7</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_81">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,8</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_82">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,9</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_83">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,10</ni:value>
+    </prov:entity>
+  </prov:records>
+</prov:container>

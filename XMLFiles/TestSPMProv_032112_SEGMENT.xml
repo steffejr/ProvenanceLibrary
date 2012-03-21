@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prov:container xmlns:prov="http://openprovenance.org/prov-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ni="https://github.com/INCF/ProvenanceLibrary/wiki/terms" prov:id="OutName">
+  <prov:records>
+    <prov:activity prov:id="a_0">
+      <prov:startTime>21-Mar-2012 09:17:06</prov:startTime>
+      <prov:endTime>21-Mar-2012 09:17:06</prov:endTime>
+      <prov:label>matlabbatch{1}.spm.spatial.preproc</prov:label>
+      <ni:GM>1  1  1</ni:GM>
+      <ni:WM>1  1  1</ni:WM>
+      <ni:CSF>1  1  1</ni:CSF>
+      <ni:biascor>1</ni:biascor>
+      <ni:cleanup>0</ni:cleanup>
+      <ni:ngaus>2224</ni:ngaus>
+      <ni:regtype>mni</ni:regtype>
+      <ni:warpreg>1</ni:warpreg>
+      <ni:warpco>25</ni:warpco>
+      <ni:biasreg>0.0001</ni:biasreg>
+      <ni:biasfwhm>60</ni:biasfwhm>
+      <ni:samp>3</ni:samp>
+    </prov:activity>
+    <prov:entity prov:id="e_0">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/P00004218_S0001_T1_1.nii,1</ni:value>
+    </prov:entity>
+    <prov:dependencies>
+      <prov:used prov:id="u_0">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_0"/>
+      </prov:used>
+      <prov:used prov:id="u_1">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_1"/>
+      </prov:used>
+      <prov:used prov:id="u_2">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_2"/>
+      </prov:used>
+      <prov:used prov:id="u_3">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_3"/>
+      </prov:used>
+      <prov:used prov:id="u_4">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_4"/>
+      </prov:used>
+    </prov:dependencies>
+    <prov:entity prov:id="e_1">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data5/spm8/tpm/grey.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_2">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data5/spm8/tpm/white.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_3">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data5/spm8/tpm/csf.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_4">
+      <prov:type xsi:type="xsd:string">N/A</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string"></ni:value>
+    </prov:entity>
+  </prov:records>
+</prov:container>

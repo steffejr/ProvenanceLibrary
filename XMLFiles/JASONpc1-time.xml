@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<opmGraph xmlns="http://openprovenance.org/model/opmx#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns4="http://example.com/" id="gr_16">
+    <accounts>
+        <account id="account1"/>
+    </accounts>
+    <processes>
+        <process id="p1">
+            <account ref="account1"/>
+            <label value="SPM Segment"/>
+        </process>
+        <process id="p2">
+            <account ref="account1"/>
+            <label value="SPM Step Two"/>
+        </process>
+    </processes>
+    <artifacts>
+        <artifact id="a1">
+            <account ref="account1"/>
+            <label value="Anatomy Image"/>
+        </artifact>
+        <artifact id="a2">
+            <account ref="account1"/>
+            <label value="Grey Matter Template"/>
+        </artifact>
+        <artifact id="a3">
+            <account ref="account1"/>
+            <label value="White Matter Template"/>
+        </artifact>
+        <artifact id="a4">
+            <account ref="account1"/>
+            <label value="CSF Template"/>
+        </artifact>
+        <artifact id="a101">
+            <account ref="account1"/>
+            <label value="modulated GM"/>
+        </artifact>
+        <artifact id="a102">
+            <account ref="account1"/>
+            <label value="nonmodulated GM"/>
+        </artifact>
+        <artifact id="a103">
+            <account ref="account1"/>
+            <label value="normalized modulated GM"/>
+        </artifact>
+        <artifact id="a104">
+            <account ref="account1"/>
+            <label value="modulated WM"/>
+        </artifact>
+        <artifact id="a105">
+            <account ref="account1"/>
+            <label value="nonmodulated WM"/>
+        </artifact>
+        <artifact id="a106">
+            <account ref="account1"/>
+            <label value="normalized modulated WM"/>
+        </artifact>        
+	<artifact id="a107">
+            <account ref="account1"/>
+            <label value="modulated CSF"/>
+        </artifact>
+        <artifact id="a108">
+            <account ref="account1"/>
+            <label value="nonmodulated CSF"/>
+        </artifact>
+        <artifact id="a109">
+            <account ref="account1"/>
+            <label value="normalized modulated CSF"/>
+        </artifact>
+        <artifact id="a201">
+            <account ref="account1"/>
+            <label value="Test Output"/>
+        </artifact>
+    </artifacts>
+
+    <agents>
+        <agent id="ag1">
+            <account ref="account1"/>
+            <label value="Jason Steffener"/>
+        </agent>
+    </agents>
+
+    <dependencies>
+
+        <used id="u_202">
+            <effect ref="p2"/>
+            <role id="r_202" value="inNIFTI"/>
+            <cause ref="a101"/>
+            <account ref="account1"/>
+	    <label value="TestLabel"/>
+            <time exactlyAt="2010-01-15T08:25:05.204Z"/>
+        </used>
+
+        <used id="u_1">
+            <effect ref="p1"/>
+            <role id="r_1" value="inNIFTI"/>
+            <cause ref="a1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-01-15T08:25:05.204Z"/>
+        </used>
+        <used id="u_2">
+            <effect ref="p1"/>
+            <role id="r_2" value="inGMtemp"/>
+            <cause ref="a2"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-01-15T08:25:05.204Z"/>
+        </used>
+        <used id="u_3">
+            <effect ref="p1"/>
+            <role id="r_3" value="inWMtemp"/>
+            <cause ref="a3"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-01-15T08:25:05.204Z"/>
+        </used>
+        <used id="u_4">
+            <effect ref="p1"/>
+            <role id="r_4" value="inCSFtemp"/>
+            <cause ref="a4"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-01-15T08:25:05.204Z"/>
+        </used>
+
+
+	<wasGeneratedBy id="g_201">
+            <effect ref="a201"/>
+            <role id="r_201" value="mc1"/>
+            <cause ref="p2"/>
+            <account ref="account1"/>
+		<label value="TestLabel"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>
+
+        <wasGeneratedBy id="g_1">
+            <effect ref="a101"/>
+            <role id="r_101" value="mc1"/>
+            <cause ref="p1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy id="g_2">
+            <effect ref="a102"/>
+            <role id="r_102" value="c1"/>
+            <cause ref="p1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy id="g_3">
+            <effect ref="a103"/>
+            <role id="r_103" value="wmc1"/>
+            <cause ref="p1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy id="g_4">
+            <effect ref="a104"/>
+            <role id="r_104" value="mc2"/>
+            <cause ref="p1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy id="g_5">
+            <effect ref="a105"/>
+            <role id="r_105" value="c2"/>
+            <cause ref="p1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy id="g_6">
+            <effect ref="a106"/>
+            <role id="r_106" value="wmc2"/>
+            <cause ref="p1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>        
+	<wasGeneratedBy id="g_7">
+            <effect ref="a107"/>
+            <role id="r_107" value="mc3"/>
+            <cause ref="p1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy id="g_8">
+            <effect ref="a108"/>
+            <role id="r_108" value="c3"/>
+            <cause ref="p1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy id="g_9">
+            <effect ref="a109"/>
+            <role id="r_109" value="wmc3"/>
+            <cause ref="p1"/>
+            <account ref="account1"/>
+            <time exactlyAt="2010-10-18T22:02:34.883+01:00"/>
+        </wasGeneratedBy>
+
+
+	<wasDerivedFrom>
+		<effect ref="a1"/>
+		<cause ref="a101"/>
+		<account ref="account1"/>
+	</wasDerivedFrom>
+     
+        <wasControlledBy id="c_15">
+            <effect ref="p1"/>
+            <role id="r_14" value="user"/>
+            <cause ref="ag1"/>
+            <account ref="account1"/>
+            <startTime exactlyAt="2010-10-18T22:02:33.879+01:00"/>
+            <endTime exactlyAt="2010-10-18T22:02:35.933+01:00"/>
+        </wasControlledBy>
+    </dependencies>
+</opmGraph>

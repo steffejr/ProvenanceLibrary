@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://openprovenance.org/prov-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:prov="http://openprovenance.org/prov-xml#" xmlns:incf="http://incf.org/incf-schema" id="1">
+  <record>
+    <activity id="a0">
+      <startTime>11/30/11 00:13:20.650432 EST</startTime>
+      <endTime>11/30/11 00:13:20.650550 EST</endTime>
+      <type>program</type>
+      <name>Test_ProvCode.m</name>
+      <version>1.0.0</version>
+      <cmdline>Command_Line_Test</cmdline>
+    </activity>
+    <entity id="e0">
+      <type>environment</type>
+      <FSL_BIN>/usr/local/fsl/bin</FSL_BIN>
+      <VNCDESKTOP>cndgrid.cpmc.columbia.edu:4 (jason)</VNCDESKTOP>
+      <SSH_AGENT_PID>20470</SSH_AGENT_PID>
+      <BIOROLL>/opt/bio</BIOROLL>
+      <HOSTNAME>cndgrid.cpmc.columbia.edu</HOSTNAME>
+      <FS_OVERRIDE>0</FS_OVERRIDE>
+      <XKEYSYMDB>/share/apps/matlab/X11/app-defaults/XKeysymDB</XKEYSYMDB>
+      <SHELL>/bin/bash</SHELL>
+      <TERM>dumb</TERM>
+      <MATLABPATH>/home/jason/matlab:/share/apps/matlab/toolbox/local</MATLABPATH>
+      <HISTSIZE>1000</HISTSIZE>
+      <HMMER_DB>/home/jason/bio/hmmer/db</HMMER_DB>
+      <SSH_CLIENT>156.145.113.9 62604 22</SSH_CLIENT>
+      <FSLMULTIFILEQUIT>TRUE</FSLMULTIFILEQUIT>
+      <PERL5LIB>/usr/local/freesurfer/mni/lib/perl5/5.8.5</PERL5LIB>
+      <SGE_CELL>default</SGE_CELL>
+      <SGE_ARCH>lx26-amd64</SGE_ARCH>
+      <GTK_RC_FILES>/etc/gtk/gtkrc:/home/jason/.gtkrc-1.2-gnome2</GTK_RC_FILES>
+      <__KMP_REGISTERED_LIB_2078>0x2aaad15fcd90-cafedb90-libiomp5.so</__KMP_REGISTERED_LIB_2078>
+      <LC_NUMERIC>C</LC_NUMERIC>
+      <MPICH_PROCESS_GROUP>no</MPICH_PROCESS_GROUP>
+      <WINDOWID>38004110</WINDOWID>
+      <OS>Linux</OS>
+      <ROCKSROOT>/opt/rocks/share/devel</ROCKSROOT>
+      <SSH_TTY>/dev/pts/3</SSH_TTY>
+      <ANT_HOME>/opt/rocks</ANT_HOME>
+      <XAPPLRESDIR>/share/apps/matlab/X11/app-defaults</XAPPLRESDIR>
+      <LOCAL_DIR>/usr/local/freesurfer/local</LOCAL_DIR>
+      <USER>jason</USER>
+      <LS_COLORS>no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:</LS_COLORS>
+      <LD_LIBRARY_PATH>/share/apps/matlab/sys/os/glnxa64:/share/apps/matlab/bin/glnxa64:/share/apps/matlab/extern/lib/glnxa64:/share/apps/matlab/runtime/glnxa64:/share/apps/matlab/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/share/apps/matlab/sys/java/jre/glnxa64/jre/lib/amd64/server:/share/apps/matlab/sys/java/jre/glnxa64/jre/lib/amd64:/opt/gridengine/lib/lx26-amd64:/opt/gridengine/lib/lx26-amd64</LD_LIBRARY_PATH>
+      <FSFAST_HOME>/usr/local/freesurfer/fsfast</FSFAST_HOME>
+      <MNI_PERL5LIB>/usr/local/freesurfer/mni/lib/perl5/5.8.5</MNI_PERL5LIB>
+      <FMRI_ANALYSIS_DIR>/usr/local/freesurfer/fsfast</FMRI_ANALYSIS_DIR>
+      <ROCKS_ROOT>/opt/rocks</ROCKS_ROOT>
+      <SSH_AUTH_SOCK>/tmp/ssh-UbfFw20442/agent.20442</SSH_AUTH_SOCK>
+      <GNOME_KEYRING_SOCKET>/tmp/keyring-TJ6STv/socket</GNOME_KEYRING_SOCKET>
+      <FSF_OUTPUT_FORMAT>nii</FSF_OUTPUT_FORMAT>
+      <SESSION_MANAGER>local/cndgrid.cpmc.columbia.edu:/tmp/.ICE-unix/20442</SESSION_MANAGER>
+      <__KMP_REGISTERED_LIB_31957>0x2aaad15fcd90-cafec775-libiomp5.so</__KMP_REGISTERED_LIB_31957>
+      <MINC_BIN_DIR>/usr/local/freesurfer/mni/bin</MINC_BIN_DIR>
+      <OSG_LD_LIBRARY_PATH>/share/apps/matlab/sys/openscenegraph/lib/glnxa64</OSG_LD_LIBRARY_PATH>
+      <SUBJECTS_DIR>/usr/local/freesurfer/subjects</SUBJECTS_DIR>
+      <NLSPATH>/usr/dt/lib/nls/msg/%L/%N.cat</NLSPATH>
+      <MAIL>/var/spool/mail/jason</MAIL>
+      <PATH>/share/data/data5/BashScripts/bin/:/usr/local/mricron:/usr/local/freesurfer/bin:/usr/local/freesurfer/fsfast/bin:/usr/local/fsl/bin:/usr/local/freesurfer/mni/bin:/share/data/data9/jason/SPM_Provenance/opmToolbox/bin:/share/data/data9/jason/SPM_Provenance/INCF-ProvenanceLibrary-a0968c7/src:/home/jason/Desktop/opmToolbox/bin:/share/data/data5/BashScripts/jason/eclipse/FirstProject:/usr/local/epd/bin:/share/data/data9/jason/BashScripts:/home/jason/scripts:/home/jason/AFNI:/usr/local/fsl/bin::/mnt/data5/BashScripts:/share/data/data5/Alex/newchee/dcm4che/dcm4che-2.0.25/bin:/opt/gridengine/bin/lx26-amd64:/usr/java/latest/bin:/share/data/data5/BashScripts/bin/:/usr/local/mricron:/usr/local/freesurfer/bin:/usr/local/freesurfer/fsfast/bin:/usr/local/fsl/bin:/usr/local/freesurfer/mni/bin:/share/data/data9/jason/SPM_Provenance/INCF-ProvenanceLibrary-a0968c7/src:/home/jason/Desktop/opmToolbox/bin:/share/data/data5/BashScripts/jason/eclipse/FirstProject:/usr/local/epd/bin:/share/data/data9/jason/BashScripts:/home/jason/scripts:/home/jason/AFNI:/usr/local/fsl/bin::/mnt/data5/BashScripts:/share/data/data5/Alex/newchee/dcm4che/dcm4che-2.0.25/bin:/opt/gridengine/bin/lx26-amd64:/usr/java/latest/bin:/share/data/data5/BashScripts/bin/:/usr/local/mricron:/usr/local/freesurfer/bin:/usr/local/freesurfer/fsfast/bin:/usr/local/fsl/bin:/usr/local/freesurfer/mni/bin:/home/jason/Desktop/opmToolbox/bin:/share/data/data5/BashScripts/jason/eclipse/FirstProject:/usr/local/epd/bin:/share/data/data9/jason/BashScripts:/home/jason/scripts:/home/jason/AFNI:/usr/local/fsl/bin::/mnt/data5/BashScripts:/share/data/data5/Alex/newchee/dcm4che/dcm4che-2.0.25/bin:/opt/gridengine/bin/lx26-amd64:/usr/kerberos/bin:/usr/java/latest/bin:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin/:/opt/bio/hmmer/bin:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/bio/glimmer/bin://opt/bio/glimmer/scripts:/opt/bio/gromacs/bin:/opt/bio/gmap/bin:/opt/bio/tigr/bin:/opt/bio/autodocksuite/bin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/openmpi/bin/:/opt/rocks/bin:/opt/rocks/sbin:/opt/sun-ct/bin:/home/jason/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin/:/opt/bio/hmmer/bin:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/bio/glimmer/bin://opt/bio/glimmer/scripts:/opt/bio/gromacs/bin:/opt/bio/gmap/bin:/opt/bio/tigr/bin:/opt/bio/autodocksuite/bin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/openmpi/bin/:/opt/rocks/bin:/opt/rocks/sbin:/opt/sun-ct/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin/:/opt/bio/hmmer/bin:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/bio/glimmer/bin://opt/bio/glimmer/scripts:/opt/bio/gromacs/bin:/opt/bio/gmap/bin:/opt/bio/tigr/bin:/opt/bio/autodocksuite/bin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/openmpi/bin/:/opt/rocks/bin:/opt/rocks/sbin:/opt/sun-ct/bin</PATH>
+      <TOOLBOX>/share/apps/matlab/toolbox</TOOLBOX>
+      <KMP_HANDLE_SIGNALS>0</KMP_HANDLE_SIGNALS>
+      <FSLMACHTYPE>linux_64-gcc4.1</FSLMACHTYPE>
+      <INPUTRC>/etc/inputrc</INPUTRC>
+      <PWD>/share/data/data9/jason/SPM_Provenance/XMLFiles</PWD>
+      <FUNCTIONALS_DIR>/usr/local/freesurfer/sessions</FUNCTIONALS_DIR>
+      <JAVA_HOME>/usr/java/latest</JAVA_HOME>
+      <XMODIFIERS>@im=none</XMODIFIERS>
+      <SGE_EXECD_PORT>537</SGE_EXECD_PORT>
+      <LANG>en_US.iso885915</LANG>
+      <FSLTCLSH>/usr/local/fsl/bin/fsltclsh</FSLTCLSH>
+      <SGE_QMASTER_PORT>536</SGE_QMASTER_PORT>
+      <SGE_ROOT>/opt/gridengine</SGE_ROOT>
+      <MINC_LIB_DIR>/usr/local/freesurfer/mni/lib</MINC_LIB_DIR>
+      <XFILESEARCHPATH>/share/apps/matlab/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S::/usr/dt/app-defaults/%L/Dt</XFILESEARCHPATH>
+      <BLASTDB>/home/jason/bio/ncbi/db</BLASTDB>
+      <FSLCONFDIR>/usr/local/fsl/config</FSLCONFDIR>
+      <FSLWISH>/usr/local/fsl/bin/fslwish</FSLWISH>
+      <SSH_ASKPASS>/usr/libexec/openssh/gnome-ssh-askpass</SSH_ASKPASS>
+      <SHLVL>5</SHLVL>
+      <HOME>/home/jason</HOME>
+      <MNI_DIR>/usr/local/freesurfer/mni</MNI_DIR>
+      <FSLDISPLAY>/usr/bin/display</FSLDISPLAY>
+      <FREESURFER_HOME>/usr/local/freesurfer</FREESURFER_HOME>
+      <FSLCONVERT>/usr/bin/convert</FSLCONVERT>
+      <ROLLSROOT>/opt/rocks/share/devel/src/roll</ROLLSROOT>
+      <GNOME_DESKTOP_SESSION_ID>Default</GNOME_DESKTOP_SESSION_ID>
+      <LOGNAME>jason</LOGNAME>
+      <MATLAB>/share/apps/matlab</MATLAB>
+      <FSLDIR>/usr/local/fsl</FSLDIR>
+      <CVS_RSH>ssh</CVS_RSH>
+      <DBUS_SESSION_BUS_ADDRESS>unix:abstract=/tmp/dbus-7IdpNJ9iLp,guid=b15e30efbabe7346399fff004ec3bdb4</DBUS_SESSION_BUS_ADDRESS>
+      <SSH_CONNECTION>156.145.113.9 62604 156.145.15.162 22</SSH_CONNECTION>
+      <KMP_STACKSIZE>524288</KMP_STACKSIZE>
+      <OMP_NUM_THREADS>1</OMP_NUM_THREADS>
+      <LESSOPEN>|/usr/bin/lesspipe.sh %s</LESSOPEN>
+      <BLASTMAT>/opt/bio/ncbi/data</BLASTMAT>
+      <ARCH>glnxa64</ARCH>
+      <DISPLAY>:4.0</DISPLAY>
+      <FSLOUTPUTTYPE>NIFTI</FSLOUTPUTTYPE>
+      <MNI_DATAPATH>/usr/local/freesurfer/mni/data</MNI_DATAPATH>
+      <G_BROKEN_FILENAMES>1</G_BROKEN_FILENAMES>
+      <FSL_DIR>/usr/local/fsl</FSL_DIR>
+      <COLORTERM>gnome-terminal</COLORTERM>
+      <_>/bin/env</_>
+    </entity>
+    <entity id="e1">
+      <type>runtime</type>
+    </entity>
+    <entity id="e2">
+      <type>output:file</type>
+      <warped_file>/full/path/to/file</warped_file>
+    </entity>
+    <dependencies>
+      <wasGeneratedBy id="wgb0">
+        <entity ref="e2"/>
+        <activity ref="a0"/>
+        <time>NULL</time>
+      </wasGeneratedBy>
+      <wasGeneratedBy id="wgb1">
+        <entity ref="e4"/>
+        <activity ref="a0"/>
+        <time>NULL</time>
+      </wasGeneratedBy>
+    </dependencies>
+    <entity id="e4">
+      <type>output:stat</type>
+      <pearson_correlation_coefficient>.234</pearson_correlation_coefficient>
+    </entity>
+  </record>
+</container>

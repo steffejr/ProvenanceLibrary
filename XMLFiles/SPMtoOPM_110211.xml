@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opmGraph>
+   <annotation>
+      <created-by value="jasoncode"/>
+      <version value="0.01"/>
+   </annotation>
+   <accounts>
+      <account id="jason"/>
+   </accounts>
+   <processes>
+      <process id="spm.temporal.st">
+         <account ref="jason"/>
+         <label value="spm.temporal.st"/>
+         <annotation>
+            <interface value="PROGRAM NAME" version="PROGRAM VERSION"/>
+            <inputs>
+               <param id="scans"/>
+               <param id="nslices"/>
+               <param id="tr"/>
+               <param id="ta"/>
+               <param id="so"/>
+               <param id="refslice"/>
+               <param id="prefix"/>
+            </inputs>
+            <runtime>
+               <key name="cmdline"/>
+               <key name="cwd"/>
+               <key name="datetime"/>
+               <key name="duration"/>
+               <key name="environ"/>
+               <key name="hostname"/>
+               <key name="merged"/>
+               <key name="returncode"/>
+               <key name="stderr"/>
+               <key name="stdout"/>
+            </runtime>
+         </annotation>
+      </process>
+      <process id="spm.spatial.realign">
+         <account ref="jason"/>
+         <label value="spm.spatial.realign"/>
+         <annotation>
+            <interface value="PROGRAM NAME" version="PROGRAM VERSION"/>
+            <inputs>
+               <param id="estwrite"/>
+            </inputs>
+            <runtime>
+               <key name="cmdline"/>
+               <key name="cwd"/>
+               <key name="datetime"/>
+               <key name="duration"/>
+               <key name="environ"/>
+               <key name="hostname"/>
+               <key name="merged"/>
+               <key name="returncode"/>
+               <key name="stderr"/>
+               <key name="stdout"/>
+            </runtime>
+         </annotation>
+      </process>
+      <process id="spm.spatial.coreg">
+         <account ref="jason"/>
+         <label value="spm.spatial.coreg"/>
+         <annotation>
+            <interface value="PROGRAM NAME" version="PROGRAM VERSION"/>
+            <inputs>
+               <param id="estimate"/>
+            </inputs>
+            <runtime>
+               <key name="cmdline"/>
+               <key name="cwd"/>
+               <key name="datetime"/>
+               <key name="duration"/>
+               <key name="environ"/>
+               <key name="hostname"/>
+               <key name="merged"/>
+               <key name="returncode"/>
+               <key name="stderr"/>
+               <key name="stdout"/>
+            </runtime>
+         </annotation>
+      </process>
+      <process id="spm.spatial.normalise">
+         <account ref="jason"/>
+         <label value="spm.spatial.normalise"/>
+         <annotation>
+            <interface value="PROGRAM NAME" version="PROGRAM VERSION"/>
+            <inputs>
+               <param id="write"/>
+            </inputs>
+            <runtime>
+               <key name="cmdline"/>
+               <key name="cwd"/>
+               <key name="datetime"/>
+               <key name="duration"/>
+               <key name="environ"/>
+               <key name="hostname"/>
+               <key name="merged"/>
+               <key name="returncode"/>
+               <key name="stderr"/>
+               <key name="stdout"/>
+            </runtime>
+         </annotation>
+      </process>
+      <process id="spm.spatial.smooth">
+         <account ref="jason"/>
+         <label value="spm.spatial.smooth"/>
+         <annotation>
+            <interface value="PROGRAM NAME" version="PROGRAM VERSION"/>
+            <inputs>
+               <param id="data">CELL ARRAY WHICH I DONT KNOW HOW TO DEAL WITH YET</param>
+               <param id="fwhm">8  8  8</param>
+               <param id="dtype">0</param>
+               <param id="im">0</param>
+               <param id="prefix">s</param>
+            </inputs>
+            <runtime>
+               <key name="cmdline"/>
+               <key name="cwd"/>
+               <key name="datetime"/>
+               <key name="duration"/>
+               <key name="environ"/>
+               <key name="hostname"/>
+               <key name="merged"/>
+               <key name="returncode"/>
+               <key name="stderr"/>
+               <key name="stdout"/>
+            </runtime>
+         </annotation>
+      </process>
+   </processes>
+</opmGraph>

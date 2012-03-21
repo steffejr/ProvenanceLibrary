@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://openprovenance.org/prov-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:prov="http://openprovenance.org/prov-xml#" xmlns:incf="http://incf.org/incf-schema" xmlns:ni="https://github.com/INCF/ProvenanceLibrary/wiki/terms" id="BET">
+  <records>
+    <activity id="a0">
+      <startTime>11/30/11 00:13:20.650432 EST</startTime>
+      <endTime>11/30/11 00:13:20.650550 EST</endTime>
+      <type>ni:brain_extraction</type>
+      <cmdline>/Users/satra/Dropbox/WORK/PROJECTS/INCF/ProvenanceLibrary/src/testneuroprov -c 2</cmdline>
+      <program>/Users/satra/Dropbox/WORK/PROJECTS/INCF/ProvenanceLibrary/src/testneuroprov</program>
+      <version>1.0.0</version>
+    </activity>
+    <entity id="e0">
+      <type>ni:input</type>
+      <name>arg1</name>
+      <value>-c</value>
+    </entity>
+    <dependencies>
+      <used id="u0">
+        <activity ref="a0"/>
+        <entity ref="e0"/>
+      </used>
+      <used id="u1">
+        <activity ref="a0"/>
+        <entity ref="e2"/>
+      </used>
+      <wasGeneratedBy id="wgb0">
+        <entity ref="e5"/>
+        <activity ref="a0"/>
+      </wasGeneratedBy>
+      <wasGeneratedBy id="wgb1">
+        <entity ref="e7"/>
+        <activity ref="a0"/>
+      </wasGeneratedBy>
+    </dependencies>
+    <entity id="e2">
+      <type>ni:input</type>
+      <name>arg2</name>
+      <value>2</value>
+    </entity>
+    <entity id="e4">
+      <type>ni:environ</type>
+      <PATH>/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin</PATH>
+      <TMPDIR>/var/folders/1l/ly3rt98n1sd4cdw03l7ncf1r0000gn/T/</TMPDIR>
+      <LOGNAME>satra</LOGNAME>
+      <COMMAND_MODE>unix2003</COMMAND_MODE>
+      <DISPLAY>/tmp/launch-36iSDO/org.macosforge.xquartz:0</DISPLAY>
+      <Apple_PubSub_Socket_Render>/tmp/launch-P4iguB/Render</Apple_PubSub_Socket_Render>
+      <USER>satra</USER>
+      <SHELL>/bin/bash</SHELL>
+      <SSH_AUTH_SOCK>/tmp/launch-Sgj06F/Listeners</SSH_AUTH_SOCK>
+      <HOME>/Users/satra</HOME>
+    </entity>
+    <entity id="e5">
+      <type>ni:output</type>
+      <path>./testneuroprov.c</path>
+      <md5sum>fb9a1c66b0a65c5cecda9b69052f1078</md5sum>
+      <name>warped_file</name>
+      <type>ni:normalized</type>
+    </entity>
+    <entity id="e7">
+      <type>ni:output</type>
+      <name>pearson_correlation_coefficient</name>
+      <value>.234</value>
+      <type>ni:statistic</type>
+    </entity>
+  </records>
+</container>

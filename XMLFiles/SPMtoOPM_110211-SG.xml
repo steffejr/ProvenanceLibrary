@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opmGraph xmlns="http://openprovenance.org/model/opmx#">
+   <accounts>
+      <account id="account_highlevel"/>
+      <account id="account_lowlevel"/>
+   </accounts>
+   <processes>
+      <process id="process_spm_jobman_high">
+         <account ref="account_highlevel"/>
+         <label value="spm_jobman"/>
+      </process>
+      <process id="process_spm_slice_timing">
+         <account ref="account_lowlevel"/>
+         <label value="spm_slice_timing"/>
+      </process>
+      <process id="process_spm_realign">
+         <account ref="account_lowlevel"/>
+         <label value="spm_realign"/>
+      </process>
+      <process id="process_spm_coreg">
+         <account ref="account_lowlevel"/>
+         <label value="spm_coreg"/>
+      </process>
+      <process id="process_spm_normalise">
+         <account ref="account_lowlevel"/>
+         <label value="spm_normalise"/>
+      </process>
+      <process id="process_spm_smooth">
+         <account ref="account_lowlevel"/>
+         <label value="spm_smooth"/>
+      </process>
+   </processes>
+   <artifacts>
+      <artifact id="artifact_spm_jobman_params">
+	<account ref="account_highlevel" />
+	<account ref="account_lowlevel" />
+	<label value="This is the list of parameters sent to spm_jobman" />
+	<!-- For encoding, I just used the URL of a tool that serializes MATLAB structures into XML, to identify the format; I think this is how OPM intends this field to be used, other thoughts appreciated -->
+	<type value="http://www.mathworks.com/matlabcentral/fileexchange/6268-xml4mat-v2-0" />
+	<value encoding="http://dont_know_what_goes_here">
+	  <content>
+	    <param name="cmd">run</param>
+	    <param name="matlabbatch">...output of MATLAB->XML serializer...</param>
+	  </content>
+	</value>
+      </artifact>
+      <artifact id="artifact_spm_slice_timing_params">
+	<account ref="account_lowlevel" />
+	<label value="This is the list of parameters sent to spm_slice_timing" />
+	<type value="http://www.mathworks.com/matlabcentral/fileexchange/6268-xml4mat-v2-0" />
+	<value encoding="http://dont_know_what_goes_here">
+	  <content>
+	  ...output of MATLAB->XML serializer for the parameters to slice timing function...
+	  </content>
+	</value>
+      </artifact>
+      <artifact id="artifact_spm_coreg_params">
+	<account ref="account_lowlevel" />
+	<label value="This is the list of parameters sent to spm_coreg" />
+	<type value="http://www.mathworks.com/matlabcentral/fileexchange/6268-xml4mat-v2-0" />
+	<value encoding="http://dont_know_what_goes_here">
+	  <content>
+	  ...output of MATLAB->XML serializer for the parameters to co-registration function...
+	  </content>
+	</value>
+      </artifact>
+      <artifact id="artifact_spm_realign_params">
+	<account ref="account_lowlevel" />
+	<label value="This is the list of parameters sent to spm_realign" />
+	<type value="http://www.mathworks.com/matlabcentral/fileexchange/6268-xml4mat-v2-0" />
+	<value encoding="http://dont_know_what_goes_here">
+	  <content>
+	  ...output of MATLAB->XML serializer for the parameters to realign function...
+	  </content>
+	</value>
+      </artifact>
+      <artifact id="artifact_spm_smooth_params">
+	<account ref="account_lowlevel" />
+	<label value="This is the list of parameters sent to spm smooth" />
+	<type value="http://www.mathworks.com/matlabcentral/fileexchange/6268-xml4mat-v2-0" />
+	<value encoding="http://dont_know_what_goes_here">
+	  <content>
+	    ...output of MATLAB->XML serializer for the parameters to smooth function...
+	  </content>
+	</value>
+      </artifact>
+   </artifacts>
+   <dependencies>
+     <used>
+       <effect ref="process_spm_jobman_highlevel" />
+       <role />
+       <cause ref="artifact_spm_jobman_params" />
+       <account ref="account_highlevel" />
+     </used>
+     <used>
+       <effect ref="process_spm_slice_timing" />
+       <role />
+       <cause ref="artifact_spm_slice_timing_params" />
+       <account ref="account_lowlevel" />
+     </used>
+     <used>
+       <effect ref="process_spm_coreg" />
+       <role />
+       <cause ref="artifact_spm_coreg_params" />
+       <account ref="account_lowlevel" />
+     </used>
+     <used>
+       <effect ref="process_spm_normalize" />
+       <role />
+       <cause ref="artifact_spm_normalize" />
+       <account ref="account_lowlevel" />
+     </used>
+     <used>
+       <effect ref="process_spm_realign" />
+       <role />
+       <cause ref="artifact_spm_realign_params" />
+       <account ref="account_lowlevel" />
+     </used>
+     <used>
+       <effect ref="process_spm_smooth" />
+       <role />
+       <cause ref="artifact_spm_smooth_params" />
+       <account ref="account_lowlevel" />
+     </used>
+   </dependencies>
+</opmGraph>
