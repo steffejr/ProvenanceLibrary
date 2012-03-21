@@ -4,12 +4,12 @@ OutputFiles = {};
 OutputLabels = {};
 [PathName, FileName] = fileparts(char(InputFile));
 
-SM = spm_cfg_preproc
+SM = spm_cfg_preproc;
 prefix = {'c' 'mwc' 'wc'};
 labels = {'Modulated Normalised' 'Unmodulated Normalised' 'Native Space'};
 
 Outfieldnames = fieldnames(OutputStruct);
-OutputIndex = 2
+OutputIndex = 2;
 
 for j = 1:3
     v = getfield(OutputStruct,Outfieldnames{j});
@@ -22,7 +22,7 @@ for j = 1:3
             index = i;
             TissueName = SM.val{OutputIndex}.val{j}.name;
             TissueTag = SM.val{OutputIndex}.val{j}.tag;
-            FindCurrentSelections = find(v)
+            FindCurrentSelections = find(v);
             OutputPrefix = prefix(FindCurrentSelections);
             OutLabels = labels(FindCurrentSelections);
             for k = 1:length(OutputPrefix)

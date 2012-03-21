@@ -1,23 +1,4 @@
-clear mex
-clear functions
-clear all
-% Load up the libraries needed
-if not(libisloaded('libprov'))
-    loadlibrary('/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/libprov.so','/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/provenance.h')
-end
-%libfunctionsview libprov
-
-if not(libisloaded('libneuroprov'))
-    loadlibrary('/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/libneuroprov.so','/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/src/neuroprovenance.h')
-end
-%libfunctionsview libneuroprov
-
-if not(libisloaded('shrlibsample'))
-    addpath /usr/local/matlab/extern/examples/shrlib/
-    loadlibrary shrlibsample shrlibsample.h
-end
-%libfunctionsview shrlibsample
-%% 
+function SPM8toProv(JobFile)
 OutDir = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/XMLFiles';
 OutName = 'SPMProv_032112_SHORTv2';
 OutFile = fullfile(OutDir,[OutName '.xml']);
@@ -26,9 +7,6 @@ p_prov = calllib('libneuroprov','newProvenanceObject','OutName');
 % create an agent
 %calllib('libprov','newAgent',p_prov);
 
-% Locate the FILLED IN SPM job
-JobFile = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/SPMJobs/SegmentONLYJob_FilledInJob.m'
-JobFile = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/SPMJobs/TestPreProcessSHORT_FilledInJob.m'
 % Execute the job file so that it creates the matlabbatch
 [PathName FileName] = fileparts(JobFile);
 cd(PathName)
@@ -76,7 +54,7 @@ for i = 1:Nsteps
             InputFile = eval([ProcessInput '.' Parameters{1}]);
             OutputStruct = eval([ProcessInput '.' Parameters{j}]);
         %    OutputFiles = subfnFindSegmentOutputs(InputFile,OutputStruct);
-            [OutputFiles OutputLabels] = subfnFindSegmentOutputs(InputFile,OutputStruct)
+            [OutputFiles OutputLabels] = subfnFindSegmentOutputs(InputFile,OutputStruct);
         
             for kk = 1:length(OutputFiles)
                 input_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',OutputFiles{kk},OutputLabels{kk});
@@ -93,7 +71,7 @@ for i = 1:Nsteps
                 end
             end
         elseif isstruct(D)
-            Dfieldnames = fieldnames(D)
+            Dfieldnames = fieldnames(D);
             for k = 1:length(Dfieldnames)
                 Efield = getfield(D,Dfieldnames{k});
                 if iscell(Efield)
@@ -103,7 +81,6 @@ for i = 1:Nsteps
                     % this input image
                     
                     try 
-                        ProcessName = '';
                         ProcessName = Levels{3};
 %                         if length(Levels)>3
 %                             for mm = 4:length(Levels)
@@ -113,19 +90,45 @@ for i = 1:Nsteps
                        SM = eval(['spm_cfg_' ProcessName]);
                        
                        ImageDescription  = SM.val{j}.val{k}.name;
-                    catch 
+                    catch me
                         ImageDescription = 'N/A';
                     end
                     for m = 1:length(Efield)
                        input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',Efield{m},ImageDescription); 
                     end
                 else
-                    calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Dfieldnames{k},num2str(Efield));
+                    OutStr = subfnConvertFieldToString(Efield);
+                    calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Dfieldnames{k},OutStr);
                 end
             end
+        elseif isnumeric(D)
+            OutStr = subfnConvertFieldToString(D);
+            calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Parameters{j},OutStr);
         end
     end
 end
 % Write to an XML file
 calllib('libneuroprov','printProvenance',p_prov,OutFile)
 
+function OutStr = subfnConvertFieldToString(Efield)
+% Some numerical parameters are actually vectors or
+% matrices
+if isnumeric(Efield)
+    if length(Efield)>1
+        [MM NN] = size(Efield);
+        OutStr = '[';
+        for mm = 1:MM
+            for nn = 1:NN
+                OutStr = [OutStr ' ' num2str(Efield(mm,nn))];
+            end
+            OutStr = [OutStr ';'];
+        end
+        % remove the last semicolon
+        OutStr = OutStr(1:end-1);
+        OutStr = [OutStr ']'];
+    else
+        OutStr = num2str(Efield);
+    end
+else
+    OutStr = Efield;
+end
