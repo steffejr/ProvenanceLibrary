@@ -1,6 +1,6 @@
 function SPM8toProv(JobFile)
 OutDir = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/XMLFiles';
-OutName = 'SPMProv_032112_SHORTv2';
+OutName = 'SPMProv_032212_SHORTv2';
 OutFile = fullfile(OutDir,[OutName '.xml']);
 % Create the top level container
 p_prov = calllib('libneuroprov','newProvenanceObject','OutName');
@@ -62,14 +62,42 @@ for i = 1:Nsteps
         end
         % if D is a cell assume it is image data
         if iscell(D)
+            % but is this a cell of cells or just a cell of images
             for k = 1:length(D)
                 % Check to see if D is a 4-D nifti file
+                flag = 0;
                 if iscell(D{k})
-                    input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',D{k}{end},'N/A');
+                    
+                        [UniqueImages ListOfIndices] = subfnFindUniqueFiles(D{k})
+                        for m = 1:length(UniqueImages)
+                            OutStr = subfnConvertFieldToString(ListOfIndices{m})
+                            input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI:MULTIcellArray',UniqueImages{m},OutStr);
+                        end
+                    
+                    % Single image
+                    
                 else
-                    input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',D{k},'N/A');
+                    flag = 1;
+                    break 
                 end
             end
+            if flag == 1
+                [UniqueImages ListOfIndices] = subfnFindUniqueFiles(D)
+                for m = 1:length(UniqueImages)
+                    OutStr = subfnConvertFieldToString(ListOfIndices{m})
+                    input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI:SINGLEcellArray',UniqueImages{m},OutStr);
+                end
+            end
+            %input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI:singleImage',D{k},'N/A');
+            
+            
+            %[UniqueImages ListOfIndices] = subfnFindUniqueFiles(D)
+            %for m = 1:length(UniqueImages)
+            %    OutStr = subfnConvertFieldToString(ListOfIndices{m})
+            %    input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI:singleImage',UniqueImages{m},OutStr);
+            %end
+            
+        % Structure of images or some parameters
         elseif isstruct(D)
             Dfieldnames = fieldnames(D);
             for k = 1:length(Dfieldnames)
@@ -88,19 +116,25 @@ for i = 1:Nsteps
 %                             end
 %                         end
                        SM = eval(['spm_cfg_' ProcessName]);
-                       
                        ImageDescription  = SM.val{j}.val{k}.name;
                     catch me
                         ImageDescription = 'N/A';
                     end
-                    for m = 1:length(Efield)
-                       input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',Efield{m},ImageDescription); 
-                    end
+                    % Add image
+                    %for m = 1:length(Efield)
+                        [UniqueImages ListOfIndices] = subfnFindUniqueFiles(Efield);
+                        for mm = 1:length(UniqueImages)
+                            OutStr = subfnConvertFieldToString(ListOfIndices{mm});
+                            input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI:structImage',UniqueImages{mm},OutStr);
+                        end
+                       %input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',Efield{m},ImageDescription); 
+                    %end
                 else
                     OutStr = subfnConvertFieldToString(Efield);
                     calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Dfieldnames{k},OutStr);
                 end
             end
+        % Single parameter
         elseif isnumeric(D)
             OutStr = subfnConvertFieldToString(D);
             calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Parameters{j},OutStr);
