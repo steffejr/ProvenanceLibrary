@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prov:container xmlns:prov="http://openprovenance.org/prov-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ni="https://github.com/INCF/ProvenanceLibrary/wiki/terms" prov:id="OutName">
+  <prov:records>
+    <prov:activity prov:id="a_0">
+      <prov:startTime>22-Mar-2012 08:58:19</prov:startTime>
+      <prov:endTime>22-Mar-2012 08:58:19</prov:endTime>
+      <prov:label>ProcessName1</prov:label>
+    </prov:activity>
+    <prov:activity prov:id="a_1">
+      <prov:startTime>22-Mar-2012 08:58:19</prov:startTime>
+      <prov:endTime>22-Mar-2012 08:58:19</prov:endTime>
+      <prov:label>ProcessName2</prov:label>
+      <ni:5>KeyValueStr</ni:5>
+    </prov:activity>
+    <prov:entity prov:id="e_0">
+      <prov:type xsi:type="xsd:string">type</prov:type>
+      <ni:name xsi:type="xsd:string">name_input1</ni:name>
+      <ni:value xsi:type="xsd:string">value</ni:value>
+    </prov:entity>
+    <prov:dependencies>
+      <prov:used prov:id="u_0">
+        <prov:activity prov:ref="a_0"/>
+        <prov:entity prov:ref="e_0"/>
+      </prov:used>
+      <prov:wasGeneratedBy prov:id="wgb_0">
+        <prov:entity prov:ref="e_1"/>
+        <prov:activity prov:ref="a_0"/>
+      </prov:wasGeneratedBy>
+      <prov:used prov:id="u_1">
+        <prov:activity prov:ref="a_1"/>
+        <prov:entity prov:ref="e_1"/>
+      </prov:used>
+    </prov:dependencies>
+    <prov:entity prov:id="e_1">
+      <prov:type xsi:type="xsd:string">type</prov:type>
+      <ni:name xsi:type="xsd:string">name_output</ni:name>
+      <ni:value xsi:type="xsd:string">value</ni:value>
+    </prov:entity>
+  </prov:records>
+</prov:container>

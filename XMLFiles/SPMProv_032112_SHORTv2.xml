@@ -2,8 +2,8 @@
 <prov:container xmlns:prov="http://openprovenance.org/prov-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ni="https://github.com/INCF/ProvenanceLibrary/wiki/terms" prov:id="OutName">
   <prov:records>
     <prov:activity prov:id="a_0">
-      <prov:startTime>21-Mar-2012 13:30:34</prov:startTime>
-      <prov:endTime>21-Mar-2012 13:30:34</prov:endTime>
+      <prov:startTime>22-Mar-2012 09:13:21</prov:startTime>
+      <prov:endTime>22-Mar-2012 09:13:21</prov:endTime>
       <prov:label>matlabbatch{1}.spm.spatial.preproc</prov:label>
       <ni:GM>[ 1 1 1]</ni:GM>
       <ni:WM>[ 1 1 1]</ni:WM>
@@ -432,8 +432,8 @@
       <ni:value xsi:type="xsd:string"></ni:value>
     </prov:entity>
     <prov:activity prov:id="a_1">
-      <prov:startTime>21-Mar-2012 13:30:34</prov:startTime>
-      <prov:endTime>21-Mar-2012 13:30:34</prov:endTime>
+      <prov:startTime>22-Mar-2012 09:13:22</prov:startTime>
+      <prov:endTime>22-Mar-2012 09:13:22</prov:endTime>
       <prov:label>matlabbatch{2}.spm.temporal.st</prov:label>
       <ni:nslices>41</ni:nslices>
       <ni:tr>2</ni:tr>
@@ -452,8 +452,8 @@
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,10</ni:value>
     </prov:entity>
     <prov:activity prov:id="a_2">
-      <prov:startTime>21-Mar-2012 13:30:34</prov:startTime>
-      <prov:endTime>21-Mar-2012 13:30:34</prov:endTime>
+      <prov:startTime>22-Mar-2012 09:13:22</prov:startTime>
+      <prov:endTime>22-Mar-2012 09:13:22</prov:endTime>
       <prov:label>matlabbatch{3}.spm.spatial.realign.estwrite</prov:label>
       <ni:quality>0.9</ni:quality>
       <ni:sep>4</ni:sep>
@@ -479,8 +479,8 @@
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,10</ni:value>
     </prov:entity>
     <prov:activity prov:id="a_3">
-      <prov:startTime>21-Mar-2012 13:30:34</prov:startTime>
-      <prov:endTime>21-Mar-2012 13:30:34</prov:endTime>
+      <prov:startTime>22-Mar-2012 09:13:22</prov:startTime>
+      <prov:endTime>22-Mar-2012 09:13:22</prov:endTime>
       <prov:label>matlabbatch{4}.spm.spatial.coreg.estimate</prov:label>
       <ni:cost_fun>nmi</ni:cost_fun>
       <ni:sep>[ 4 2]</ni:sep>
@@ -598,8 +598,8 @@
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,10</ni:value>
     </prov:entity>
     <prov:activity prov:id="a_4">
-      <prov:startTime>21-Mar-2012 13:30:34</prov:startTime>
-      <prov:endTime>21-Mar-2012 13:30:34</prov:endTime>
+      <prov:startTime>22-Mar-2012 09:13:22</prov:startTime>
+      <prov:endTime>22-Mar-2012 09:13:22</prov:endTime>
       <prov:label>matlabbatch{5}.spm.spatial.normalise.write</prov:label>
       <ni:preserve>0</ni:preserve>
       <ni:bb>[ -78 -112 -50; 78 76 85]</ni:bb>
@@ -719,8 +719,8 @@
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,10</ni:value>
     </prov:entity>
     <prov:activity prov:id="a_5">
-      <prov:startTime>21-Mar-2012 13:30:35</prov:startTime>
-      <prov:endTime>21-Mar-2012 13:30:35</prov:endTime>
+      <prov:startTime>22-Mar-2012 09:13:23</prov:startTime>
+      <prov:endTime>22-Mar-2012 09:13:23</prov:endTime>
       <prov:label>matlabbatch{6}.spm.spatial.smooth</prov:label>
       <ni:fwhm>[ 8 8 8]</ni:fwhm>
       <ni:dtype>0</ni:dtype>
