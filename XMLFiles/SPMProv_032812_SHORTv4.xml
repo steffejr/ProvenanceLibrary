@@ -2,8 +2,8 @@
 <prov:container xmlns:prov="http://openprovenance.org/prov-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ni="https://github.com/INCF/ProvenanceLibrary/wiki/terms" prov:id="OutName">
   <prov:records>
     <prov:activity prov:id="a_0">
-      <prov:startTime>28-Mar-2012 09:04:26</prov:startTime>
-      <prov:endTime>28-Mar-2012 09:04:26</prov:endTime>
+      <prov:startTime>28-Mar-2012 10:08:36</prov:startTime>
+      <prov:endTime>28-Mar-2012 10:08:36</prov:endTime>
       <prov:label>matlabbatch{1}.spm.spatial.preproc</prov:label>
       <ni:GM>[ 1 1 1]</ni:GM>
       <ni:WM>[ 1 1 1]</ni:WM>
@@ -92,58 +92,106 @@
         <prov:activity prov:ref="a_1"/>
         <prov:entity prov:ref="e_16"/>
       </prov:used>
+      <prov:wasGeneratedBy prov:id="wgb_10">
+        <prov:entity prov:ref="e_17"/>
+        <prov:activity prov:ref="a_1"/>
+      </prov:wasGeneratedBy>
+      <prov:wasGeneratedBy prov:id="wgb_11">
+        <prov:entity prov:ref="e_18"/>
+        <prov:activity prov:ref="a_1"/>
+      </prov:wasGeneratedBy>
       <prov:used prov:id="u_7">
         <prov:activity prov:ref="a_2"/>
-        <prov:entity prov:ref="e_17"/>
+        <prov:entity prov:ref="e_19"/>
       </prov:used>
       <prov:used prov:id="u_8">
         <prov:activity prov:ref="a_2"/>
-        <prov:entity prov:ref="e_18"/>
+        <prov:entity prov:ref="e_20"/>
       </prov:used>
+      <prov:wasGeneratedBy prov:id="wgb_12">
+        <prov:entity prov:ref="e_21"/>
+        <prov:activity prov:ref="a_2"/>
+      </prov:wasGeneratedBy>
+      <prov:wasGeneratedBy prov:id="wgb_13">
+        <prov:entity prov:ref="e_22"/>
+        <prov:activity prov:ref="a_2"/>
+      </prov:wasGeneratedBy>
+      <prov:wasGeneratedBy prov:id="wgb_14">
+        <prov:entity prov:ref="e_23"/>
+        <prov:activity prov:ref="a_2"/>
+      </prov:wasGeneratedBy>
       <prov:used prov:id="u_9">
         <prov:activity prov:ref="a_3"/>
-        <prov:entity prov:ref="e_19"/>
+        <prov:entity prov:ref="e_24"/>
       </prov:used>
       <prov:used prov:id="u_10">
         <prov:activity prov:ref="a_3"/>
-        <prov:entity prov:ref="e_20"/>
+        <prov:entity prov:ref="e_25"/>
       </prov:used>
       <prov:used prov:id="u_11">
         <prov:activity prov:ref="a_3"/>
-        <prov:entity prov:ref="e_21"/>
+        <prov:entity prov:ref="e_26"/>
       </prov:used>
       <prov:used prov:id="u_12">
         <prov:activity prov:ref="a_3"/>
-        <prov:entity prov:ref="e_22"/>
+        <prov:entity prov:ref="e_27"/>
       </prov:used>
       <prov:used prov:id="u_13">
         <prov:activity prov:ref="a_4"/>
-        <prov:entity prov:ref="e_23"/>
+        <prov:entity prov:ref="e_28"/>
       </prov:used>
       <prov:used prov:id="u_14">
         <prov:activity prov:ref="a_4"/>
-        <prov:entity prov:ref="e_24"/>
+        <prov:entity prov:ref="e_29"/>
       </prov:used>
       <prov:used prov:id="u_15">
         <prov:activity prov:ref="a_4"/>
-        <prov:entity prov:ref="e_25"/>
+        <prov:entity prov:ref="e_30"/>
       </prov:used>
       <prov:used prov:id="u_16">
         <prov:activity prov:ref="a_4"/>
-        <prov:entity prov:ref="e_26"/>
+        <prov:entity prov:ref="e_31"/>
       </prov:used>
+      <prov:wasGeneratedBy prov:id="wgb_15">
+        <prov:entity prov:ref="e_32"/>
+        <prov:activity prov:ref="a_4"/>
+      </prov:wasGeneratedBy>
+      <prov:wasGeneratedBy prov:id="wgb_16">
+        <prov:entity prov:ref="e_33"/>
+        <prov:activity prov:ref="a_4"/>
+      </prov:wasGeneratedBy>
+      <prov:wasGeneratedBy prov:id="wgb_17">
+        <prov:entity prov:ref="e_34"/>
+        <prov:activity prov:ref="a_4"/>
+      </prov:wasGeneratedBy>
+      <prov:wasGeneratedBy prov:id="wgb_18">
+        <prov:entity prov:ref="e_35"/>
+        <prov:activity prov:ref="a_4"/>
+      </prov:wasGeneratedBy>
       <prov:used prov:id="u_17">
         <prov:activity prov:ref="a_5"/>
-        <prov:entity prov:ref="e_27"/>
+        <prov:entity prov:ref="e_36"/>
       </prov:used>
       <prov:used prov:id="u_18">
         <prov:activity prov:ref="a_5"/>
-        <prov:entity prov:ref="e_28"/>
+        <prov:entity prov:ref="e_37"/>
       </prov:used>
       <prov:used prov:id="u_19">
         <prov:activity prov:ref="a_5"/>
-        <prov:entity prov:ref="e_29"/>
+        <prov:entity prov:ref="e_38"/>
       </prov:used>
+      <prov:wasGeneratedBy prov:id="wgb_19">
+        <prov:entity prov:ref="e_39"/>
+        <prov:activity prov:ref="a_5"/>
+      </prov:wasGeneratedBy>
+      <prov:wasGeneratedBy prov:id="wgb_20">
+        <prov:entity prov:ref="e_40"/>
+        <prov:activity prov:ref="a_5"/>
+      </prov:wasGeneratedBy>
+      <prov:wasGeneratedBy prov:id="wgb_21">
+        <prov:entity prov:ref="e_41"/>
+        <prov:activity prov:ref="a_5"/>
+      </prov:wasGeneratedBy>
     </prov:dependencies>
     <prov:entity prov:id="e_1">
       <prov:type xsi:type="xsd:string">Grey Matter: Modulated Normalised</prov:type>
@@ -216,14 +264,15 @@
       <ni:value xsi:type="xsd:string"></ni:value>
     </prov:entity>
     <prov:activity prov:id="a_1">
-      <prov:startTime>28-Mar-2012 09:04:26</prov:startTime>
-      <prov:endTime>28-Mar-2012 09:04:26</prov:endTime>
+      <prov:startTime>28-Mar-2012 10:08:36</prov:startTime>
+      <prov:endTime>28-Mar-2012 10:08:36</prov:endTime>
       <prov:label>matlabbatch{2}.spm.temporal.st</prov:label>
       <ni:nslices>41</ni:nslices>
       <ni:tr>2</ni:tr>
       <ni:ta>1.9512</ni:ta>
       <ni:so>[ 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40]</ni:so>
       <ni:refslice>20</ni:refslice>
+      <ni:prefix>a</ni:prefix>
     </prov:activity>
     <prov:entity prov:id="e_15">
       <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
@@ -235,9 +284,19 @@
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii</ni:value>
     </prov:entity>
+    <prov:entity prov:id="e_17">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_18">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii</ni:value>
+    </prov:entity>
     <prov:activity prov:id="a_2">
-      <prov:startTime>28-Mar-2012 09:04:26</prov:startTime>
-      <prov:endTime>28-Mar-2012 09:04:26</prov:endTime>
+      <prov:startTime>28-Mar-2012 10:08:36</prov:startTime>
+      <prov:endTime>28-Mar-2012 10:08:36</prov:endTime>
       <prov:label>matlabbatch{3}.spm.spatial.realign.estwrite</prov:label>
       <ni:quality>0.9</ni:quality>
       <ni:sep>4</ni:sep>
@@ -252,65 +311,44 @@
       <ni:mask>1</ni:mask>
       <ni:prefix>r</ni:prefix>
     </prov:activity>
-    <prov:entity prov:id="e_17">
+    <prov:entity prov:id="e_19">
       <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii</ni:value>
     </prov:entity>
-    <prov:entity prov:id="e_18">
+    <prov:entity prov:id="e_20">
       <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii</ni:value>
     </prov:entity>
+    <prov:entity prov:id="e_21">
+      <prov:type xsi:type="xsd:string">1</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/meanaP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_22">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/raP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_23">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/raP00004218_S0001_ECF_r2_1.nii</ni:value>
+    </prov:entity>
     <prov:activity prov:id="a_3">
-      <prov:startTime>28-Mar-2012 09:04:26</prov:startTime>
-      <prov:endTime>28-Mar-2012 09:04:26</prov:endTime>
+      <prov:startTime>28-Mar-2012 10:08:36</prov:startTime>
+      <prov:endTime>28-Mar-2012 10:08:36</prov:endTime>
       <prov:label>matlabbatch{4}.spm.spatial.coreg.estimate</prov:label>
       <ni:cost_fun>nmi</ni:cost_fun>
       <ni:sep>[ 4 2]</ni:sep>
       <ni:tol>[ 0.02 0.02 0.02 0.001 0.001 0.001 0.01 0.01 0.01 0.001 0.001 0.001]</ni:tol>
       <ni:fwhm>[ 7 7]</ni:fwhm>
     </prov:activity>
-    <prov:entity prov:id="e_19">
+    <prov:entity prov:id="e_24">
       <prov:type xsi:type="xsd:string">1</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/mP00004218_S0001_ECF_r1_1.nii</ni:value>
-    </prov:entity>
-    <prov:entity prov:id="e_20">
-      <prov:type xsi:type="xsd:string">1</prov:type>
-      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
-      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/meanaP00004218_S0001_ECF_r1_1.nii</ni:value>
-    </prov:entity>
-    <prov:entity prov:id="e_21">
-      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
-      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
-      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii</ni:value>
-    </prov:entity>
-    <prov:entity prov:id="e_22">
-      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
-      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
-      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii</ni:value>
-    </prov:entity>
-    <prov:activity prov:id="a_4">
-      <prov:startTime>28-Mar-2012 09:04:26</prov:startTime>
-      <prov:endTime>28-Mar-2012 09:04:26</prov:endTime>
-      <prov:label>matlabbatch{5}.spm.spatial.normalise.write</prov:label>
-      <ni:preserve>0</ni:preserve>
-      <ni:bb>[ -78 -112 -50; 78 76 85]</ni:bb>
-      <ni:vox>[ 2 2 2]</ni:vox>
-      <ni:interp>1</ni:interp>
-      <ni:wrap>[ 0 0 0]</ni:wrap>
-      <ni:prefix>w</ni:prefix>
-    </prov:activity>
-    <prov:entity prov:id="e_23">
-      <prov:type xsi:type="xsd:string">1</prov:type>
-      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
-      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1_seg_sn.mat</ni:value>
-    </prov:entity>
-    <prov:entity prov:id="e_24">
-      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
-      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
-      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_25">
       <prov:type xsi:type="xsd:string">1</prov:type>
@@ -320,30 +358,102 @@
     <prov:entity prov:id="e_26">
       <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
-      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii</ni:value>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii</ni:value>
     </prov:entity>
-    <prov:activity prov:id="a_5">
-      <prov:startTime>28-Mar-2012 09:04:26</prov:startTime>
-      <prov:endTime>28-Mar-2012 09:04:26</prov:endTime>
-      <prov:label>matlabbatch{6}.spm.spatial.smooth</prov:label>
-      <ni:fwhm>[ 8 8 8]</ni:fwhm>
-      <ni:dtype>0</ni:dtype>
-      <ni:im>0</ni:im>
-    </prov:activity>
     <prov:entity prov:id="e_27">
       <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
-      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii</ni:value>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii</ni:value>
     </prov:entity>
+    <prov:activity prov:id="a_4">
+      <prov:startTime>28-Mar-2012 10:08:36</prov:startTime>
+      <prov:endTime>28-Mar-2012 10:08:36</prov:endTime>
+      <prov:label>matlabbatch{5}.spm.spatial.normalise.write</prov:label>
+      <ni:preserve>0</ni:preserve>
+      <ni:bb>[ -78 -112 -50; 78 76 85]</ni:bb>
+      <ni:vox>[ 2 2 2]</ni:vox>
+      <ni:interp>1</ni:interp>
+      <ni:wrap>[ 0 0 0]</ni:wrap>
+      <ni:prefix>w</ni:prefix>
+    </prov:activity>
     <prov:entity prov:id="e_28">
       <prov:type xsi:type="xsd:string">1</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
-      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/wmeanaP00004218_S0001_ECF_r1_1.nii</ni:value>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1_seg_sn.mat</ni:value>
     </prov:entity>
     <prov:entity prov:id="e_29">
       <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
       <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_30">
+      <prov:type xsi:type="xsd:string">1</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/meanaP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_31">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_32">
+      <prov:type xsi:type="xsd:string">1</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/wP00004218_S0001_ECF_r1_1_seg_sn.mat</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_33">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_34">
+      <prov:type xsi:type="xsd:string">1</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/wmeanaP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_35">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
       <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii</ni:value>
+    </prov:entity>
+    <prov:activity prov:id="a_5">
+      <prov:startTime>28-Mar-2012 10:08:36</prov:startTime>
+      <prov:endTime>28-Mar-2012 10:08:36</prov:endTime>
+      <prov:label>matlabbatch{6}.spm.spatial.smooth</prov:label>
+      <ni:fwhm>[ 8 8 8]</ni:fwhm>
+      <ni:dtype>0</ni:dtype>
+      <ni:im>0</ni:im>
+      <ni:prefix>s</ni:prefix>
+    </prov:activity>
+    <prov:entity prov:id="e_36">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_37">
+      <prov:type xsi:type="xsd:string">1</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/wmeanaP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_38">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Input NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_39">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/swaP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_40">
+      <prov:type xsi:type="xsd:string">1</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/swmeanaP00004218_S0001_ECF_r1_1.nii</ni:value>
+    </prov:entity>
+    <prov:entity prov:id="e_41">
+      <prov:type xsi:type="xsd:string">[ 1 2 3 4 5 6 7 8 9 10]</prov:type>
+      <ni:name xsi:type="xsd:string">Output NIFTI</ni:name>
+      <ni:value xsi:type="xsd:string">/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/swaP00004218_S0001_ECF_r2_1.nii</ni:value>
     </prov:entity>
   </prov:records>
 </prov:container>

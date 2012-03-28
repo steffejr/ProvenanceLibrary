@@ -1,6 +1,11 @@
-function SPM8toProv(JobFile)
+%function SPM8toProv(JobFile)
+% Notes:
+% Every time an input entity is to be created check the list of files in
+% the output to see if it already exists. Then do not create a new entity
+% but just a dependency
+
 OutDir = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/XMLFiles';
-OutName = 'SPMProv_032212_SHORTv2';
+OutName = 'SPMProv_032812_SHORTv4';
 OutFile = fullfile(OutDir,[OutName '.xml']);
 % Create the top level container
 p_prov = calllib('libneuroprov','newProvenanceObject','OutName');
@@ -15,8 +20,17 @@ eval(FileName);
 
 
 Nsteps = length(matlabbatch);
+% Use this list to keep track of the outputs so that if an input has the
+% same names as an output then it can be used as a dependency.
+ListOfInPutImages = {};
+ListOfOutPutImages = {};
+
 for i = 1:Nsteps
-    
+    ListOfInPutImages{i} = {};
+    ListOfOutPutImages{i} = {};
+    % Set the flags for determining if output needs to be written
+    WhichFlag = 0;
+    PrefixFlag = 0;
     % Find out how many levels there are. This is important because not all
     % steps are described at the same level in the batch file.
     Levels = {};
@@ -47,17 +61,22 @@ for i = 1:Nsteps
     % images
     
     Parameters = fieldnames(eval(ProcessInput));
+    
     for j = 1:length(Parameters)
         D = eval([ProcessInput '.' Parameters{j}]);
         % determine if this is the output for the segment tool
-        if strmatch(Parameters{j},'output') & strmatch(Levels{end},'preproc')
+        if ~isempty(strmatch(Parameters{j},'output') & strmatch(Levels{end},'preproc'))
             InputFile = eval([ProcessInput '.' Parameters{1}]);
             OutputStruct = eval([ProcessInput '.' Parameters{j}]);
         %    OutputFiles = subfnFindSegmentOutputs(InputFile,OutputStruct);
             [OutputFiles OutputLabels] = subfnFindSegmentOutputs(InputFile,OutputStruct);
-        
+            
             for kk = 1:length(OutputFiles)
-                input_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',OutputFiles{kk},OutputLabels{kk});
+                output_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',OutputFiles{kk},OutputLabels{kk});
+                ListOfOutPutImages{i}{length(ListOfOutPutImages{i})+1}.Ptr = output_id;
+                ListOfOutPutImages{i}{length(ListOfOutPutImages{i})}.Files = OutputFiles{kk};
+                ListOfOutPutImages{i}{length(ListOfOutPutImages{i})}.Indices = OutputLabels{kk};
+                
             end
         end
         % if D is a cell assume it is image data
@@ -68,10 +87,13 @@ for i = 1:Nsteps
                 flag = 0;
                 if iscell(D{k})
                     
-                        [UniqueImages ListOfIndices] = subfnFindUniqueFiles(D{k})
+                        [UniqueImages ListOfIndices] = subfnFindUniqueFiles(D{k});
                         for m = 1:length(UniqueImages)
-                            OutStr = subfnConvertFieldToString(ListOfIndices{m})
-                            input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI:MULTIcellArray',UniqueImages{m},OutStr);
+                            OutStr = subfnConvertFieldToString(ListOfIndices{m});
+                            input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',UniqueImages{m},OutStr);
+                            ListOfInPutImages{i}{length(ListOfInPutImages{i})+1}.Ptr = input_id;
+                            ListOfInPutImages{i}{length(ListOfInPutImages{i})}.Files = UniqueImages{m};
+                            ListOfInPutImages{i}{length(ListOfInPutImages{i})}.Indices = ListOfIndices{m};
                         end
                     
                     % Single image
@@ -82,10 +104,13 @@ for i = 1:Nsteps
                 end
             end
             if flag == 1
-                [UniqueImages ListOfIndices] = subfnFindUniqueFiles(D)
+                [UniqueImages ListOfIndices] = subfnFindUniqueFiles(D);
                 for m = 1:length(UniqueImages)
-                    OutStr = subfnConvertFieldToString(ListOfIndices{m})
-                    input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI:SINGLEcellArray',UniqueImages{m},OutStr);
+                    OutStr = subfnConvertFieldToString(ListOfIndices{m});
+                    input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',UniqueImages{m},OutStr);
+                    ListOfInPutImages{i}{length(ListOfInPutImages{i})+1}.Ptr = input_id;
+                    ListOfInPutImages{i}{length(ListOfInPutImages{i})}.Files = UniqueImages{m};
+                    ListOfInPutImages{i}{length(ListOfInPutImages{i})}.Indices = ListOfIndices{m};
                 end
             end
             %input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI:singleImage',D{k},'N/A');
@@ -110,11 +135,11 @@ for i = 1:Nsteps
                     
                     try 
                         ProcessName = Levels{3};
-%                         if length(Levels)>3
-%                             for mm = 4:length(Levels)
-%                                 ProcessName = [ProcessName '_' Levels{mm}];
-%                             end
-%                         end
+%                          if length(Levels)>3
+%                              for mm = 4:length(Levels)
+%                                  ProcessName = [ProcessName '_' Levels{mm}];
+%                              end
+%                          end
                        SM = eval(['spm_cfg_' ProcessName]);
                        ImageDescription  = SM.val{j}.val{k}.name;
                     catch me
@@ -123,20 +148,121 @@ for i = 1:Nsteps
                     % Add image
                     %for m = 1:length(Efield)
                         [UniqueImages ListOfIndices] = subfnFindUniqueFiles(Efield);
-                        for mm = 1:length(UniqueImages)
-                            OutStr = subfnConvertFieldToString(ListOfIndices{mm});
-                            input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI:structImage',UniqueImages{mm},OutStr);
+                        for m = 1:length(UniqueImages)
+                            OutStr = subfnConvertFieldToString(ListOfIndices{m});
+                            input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',UniqueImages{m},OutStr);
+                            ListOfInPutImages{i}{length(ListOfInPutImages{i})+1}.Ptr = input_id;
+                            ListOfInPutImages{i}{length(ListOfInPutImages{i})}.Files = UniqueImages{m};
+                            ListOfInPutImages{i}{length(ListOfInPutImages{i})}.Indices = ListOfIndices{m};
                         end
                        %input_id = calllib('libneuroprov','newProcessInput',p_prov,p_proc,'Input NIFTI',Efield{m},ImageDescription); 
                     %end
                 else
                     OutStr = subfnConvertFieldToString(Efield);
+                    % Check to see if the parameter is called prefix. If so then
+                    % create outputs based on the inputs, but also check to see if
+                    % there is a field called which
+                    if strcmp(Dfieldnames{k},'which')
+                        fprintf(1,'FOUND WHICH\n');
+                        WhichFlag = 1;
+                        ProcessName = Levels{3};
+
+                        SM = eval(['spm_cfg_' ProcessName]);
+                        % double check that we have the correct Config Info
+                        if strcmp(SM.values{j}.val{j}.val{k}.tag,'which')
+                            for kk = 1:length(SM.values{j}.val{j}.val{k}.values)
+                                if sum(SM.values{j}.val{j}.val{k}.values{kk} == Efield)==length(Efield)
+                                    ImagesToCreate = deblank(SM.values{j}.val{j}.val{k}.labels{kk});
+                                end
+                            end
+                        end
+                        
+                        switch ImagesToCreate
+                            case ' Mean Image Only'
+                                [PathName FileName Ext] = fileparts(ListOfInPutImages{i}{1}.Files);
+                                output_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',fullfile(PathName,['mean' FileName Ext]), '1');
+                            case ' All Images (1..n)'  
+                                for mm = 1:length(ListOfInPutImages{i})
+                                    output_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',ListOfInPutImages{i}{mm}.Files, ListOfInPutImages{i}{mm}.Indices);
+                                end
+                            case 'Images 2..n'  
+                                for mm = 1:length(ListOfInPutImages{i})
+                                    output_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',ListOfInPutImages{i}{mm}.Files, ListOfInPutImages{i}{mm}.Indices(2:end));
+                                end
+                            case ' All Images + Mean Image'
+                                for mm = 1:length(ListOfInPutImages{i})
+                                    output_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',ListOfInPutImages{i}{mm}.Files, ListOfInPutImages{i}{mm}.Indices);
+                                end
+                                [PathName FileName Ext] = fileparts(ListOfInPutImages{i}{1}.Files);
+                                output_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',fullfile(PathName,['mean' FileName Ext]), '1');
+                        end
+                        
+                    end
+                    if strcmp(Dfieldnames{k},'prefix')
+                        fprintf(1,'FOUND PREFIX\n');
+                        PrefixFlag = 1;
+                        for mm = 1:length(ListOfInPutImages{i})
+                            [PathName FileName Ext] = fileparts(ListOfInPutImages{i}{mm}.Files);
+                            OutStrFileName = subfnConvertFieldToString(ListOfInPutImages{i}{mm}.Indices);
+                            output_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',fullfile(PathName,[OutStr FileName Ext]), OutStrFileName);
+                            
+                            ListOfOutPutImages{i}{length(ListOfOutPutImages{i})+1}.Ptr = output_id;
+                            ListOfOutPutImages{i}{length(ListOfOutPutImages{i})}.Files = fullfile(PathName,[OutStr FileName Ext]);
+                            ListOfOutPutImages{i}{length(ListOfOutPutImages{i})}.Indices = OutStrFileName;
+                        end
+                    end
                     calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Dfieldnames{k},OutStr);
                 end
             end
-        % Single parameter
+            % Single parameter
         elseif isnumeric(D)
             OutStr = subfnConvertFieldToString(D);
+            % Check to see if the parameter is called prefix. If so then
+            % create outputs based on the inputs, but also check to see if
+            % there is a field called which
+            if strcmp(Parameters{j},'which')
+                fprintf(1,'FOUND WHICH\n');
+                WhichFlag = 1;
+
+            end
+            if strcmp(Dfieldnames{k},'prefix')
+                fprintf(1,'FOUND PREFIX\n');
+                PrefixFlag = 1;
+                for mm = 1:length(ListOfInPutImages{i})
+                    [PathName FileName Ext] = fileparts(ListOfInPutImages{i}{mm}.Files);
+                    OutStrFileName = subfnConvertFieldToString(ListOfInPutImages{i}{mm}.Indices);
+                    output_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',fullfile(PathName,[OutStr FileName Ext]), OutStrFileName);
+                    ListOfOutPutImages{i}{length(ListOfOutPutImages{i})+1}.Ptr = output_id;
+                    ListOfOutPutImages{i}{length(ListOfOutPutImages{i})}.Files = fullfile(PathName,[OutStr FileName Ext]);
+                    ListOfOutPutImages{i}{length(ListOfOutPutImages{i})}.Indices = OutStrFileName;
+                    
+                end
+            end
+            calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Parameters{j},OutStr);
+        elseif ischar(D)
+            OutStr = D;
+              % Check to see if the parameter is called prefix. If so then
+            % create outputs based on the inputs, but also check to see if
+            % there is a field called which
+            if strcmp(Parameters{j},'which')
+                fprintf(1,'FOUND WHICH\n');
+                WhichFlag = 1;
+                
+            end
+            if strcmp(Parameters{j},'prefix')
+                fprintf(1,'FOUND PREFIX\n');
+                PrefixFlag = 1;
+                for mm = 1:length(ListOfInPutImages{i})
+                    [PathName FileName Ext] = fileparts(ListOfInPutImages{i}{mm}.Files);
+                    OutStrFileName = subfnConvertFieldToString(ListOfInPutImages{i}{mm}.Indices);
+                    output_id = calllib('libneuroprov','newProcessOutput',p_prov,p_proc,'Output NIFTI',fullfile(PathName,[OutStr FileName Ext]), OutStrFileName);
+                    ListOfOutPutImages{i}{length(ListOfOutPutImages{i})+1}.Ptr = output_id;
+                    ListOfOutPutImages{i}{length(ListOfOutPutImages{i})}.Files = fullfile(PathName,[OutStr FileName Ext]);
+                    ListOfOutPutImages{i}{length(ListOfOutPutImages{i})}.Indices = OutStrFileName;
+                    
+                    
+                end
+            end
             calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Parameters{j},OutStr);
         end
     end
@@ -144,25 +270,3 @@ end
 % Write to an XML file
 calllib('libneuroprov','printProvenance',p_prov,OutFile)
 
-function OutStr = subfnConvertFieldToString(Efield)
-% Some numerical parameters are actually vectors or
-% matrices
-if isnumeric(Efield)
-    if length(Efield)>1
-        [MM NN] = size(Efield);
-        OutStr = '[';
-        for mm = 1:MM
-            for nn = 1:NN
-                OutStr = [OutStr ' ' num2str(Efield(mm,nn))];
-            end
-            OutStr = [OutStr ';'];
-        end
-        % remove the last semicolon
-        OutStr = OutStr(1:end-1);
-        OutStr = [OutStr ']'];
-    else
-        OutStr = num2str(Efield);
-    end
-else
-    OutStr = Efield;
-end
