@@ -3,6 +3,10 @@
 % Every time an input entity is to be created check the list of files in
 % the output to see if it already exists. Then do not create a new entity
 % but just a dependency
+%
+% Add attribute to the parameters to provide descriptions from the CFG
+% files.
+
 
 OutDir = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/XMLFiles';
 OutName = 'SPMProv_032812_SHORTv4';

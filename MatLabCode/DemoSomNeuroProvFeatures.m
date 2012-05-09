@@ -1,5 +1,5 @@
 OutDir = '/share/data/users/js2746_Jason/SPM_Provenance/ProvenanceLibrary/XMLFiles';
-OutName = 'test1';
+OutName = 'test2';
 OutFile = fullfile(OutDir,[OutName '.xml']);
 % Create the top level container
 p_prov = calllib('libneuroprov','newProvenanceObject','OutName');
@@ -11,6 +11,7 @@ ProcessInput = 'ProcessName2';
 p_proc2 = calllib('libneuroprov','newProcess',p_prov,datestr(now),datestr(now),ProcessInput);
 % These both create entities
 % This one creates a "used"
+
 calllib('libneuroprov','newProcessInput',p_prov,p_proc1,[name '_input1'],value,type);
 % This one creates a "wasGeneratedBy"
 [outval outputPtr1 outputPtr2] = calllib('libneuroprov','newProcessOutput',p_prov,p_proc1,[name '_output'],value,type);
@@ -25,7 +26,10 @@ name = 'name';
 value = 'value';
 OutStr = 'KeyValueStr';
 Parameters = 'KeyValue';
-calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Parameters,OutStr);
+id = calllib('libneuroprov','addKeyValuePair',p_prov,p_proc,Parameters,OutStr);
+
+calllib('libprov','addAttribute', idp, 'type', 'output:file','three','four','five');
+
 % calllib('libneuroprov','newProcessInput',p_prov,p_proc1,[name '_input2'],value,type);
 
 calllib('libneuroprov','printProvenance',p_prov,OutFile)
