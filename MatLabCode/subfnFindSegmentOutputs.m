@@ -2,7 +2,9 @@ function [OutputFiles OutputLabels] = subfnFindSegmentOutputs(InputFile,OutputSt
 
 OutputFiles = {};
 OutputLabels = {};
-[PathName, FileName] = fileparts(char(InputFile));
+[PathName, FileName, Ext] = fileparts(char(InputFile));
+% Strip the ,# from the Ext 
+Ext = Ext(1:4);
 
 SM = spm_cfg_preproc;
 prefix = {'c' 'mwc' 'wc'};
@@ -26,7 +28,7 @@ for j = 1:3
             OutputPrefix = prefix(FindCurrentSelections);
             OutLabels = labels(FindCurrentSelections);
             for k = 1:length(OutputPrefix)
-                OutName = fullfile(PathName,[OutputPrefix{k} num2str(j) FileName]);
+                OutName = fullfile(PathName,[OutputPrefix{k} num2str(j) FileName Ext]);
                 OutputFiles{length(OutputFiles)+1} = OutName;
                 OutputLabels{length(OutputLabels)+1} = [TissueName ': ' OutLabels{k}];
                % fprintf(1,'%s\n',OutName);
@@ -39,7 +41,7 @@ end
 v = getfield(OutputStruct,Outfieldnames{4});
 prefix = {'m'};
 if (SM.val{OutputIndex}.val{4}.values{1} == v)
-    OutName = fullfile(PathName,[prefix{1}  FileName]);
+    OutName = fullfile(PathName,[prefix{1}  FileName Ext]);
     OutputFiles{length(OutputFiles)+1} = OutName;
     OutputLabels{length(OutputLabels)+1} = SM.val{OutputIndex}.val{4}.name;
     %fprintf(1,'%s\n',OutName);

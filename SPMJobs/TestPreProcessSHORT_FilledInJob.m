@@ -1,11 +1,7 @@
 %-----------------------------------------------------------------------
 % Job configuration created by cfg_util (rev $Rev: 4252 $)
 %-----------------------------------------------------------------------
-%%
-matlabbatch{1}.spm.spatial.preproc.data = {
-                                           '/data/data10/CogRes_old/Subjects/P00004218/S0001/T1/P00004218_S0001_T1_1.nii,1'
-                                           };
-%%
+matlabbatch{1}.spm.spatial.preproc.data = {'/share/data/studies/CogRes/Subjects/P00004218/S0001/T1/T1_P00004218_S0001.nii,1'};
 matlabbatch{1}.spm.spatial.preproc.output.GM = [1 1 1];
 matlabbatch{1}.spm.spatial.preproc.output.WM = [1 1 1];
 matlabbatch{1}.spm.spatial.preproc.output.CSF = [1 1 1];
@@ -30,28 +26,28 @@ matlabbatch{1}.spm.spatial.preproc.opts.msk = {''};
 %%
 matlabbatch{2}.spm.temporal.st.scans = {
                                         {
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,1'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,2'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,3'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,4'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,5'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,6'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,7'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,8'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,9'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1.nii,10'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,1'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,2'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,3'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,4'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,5'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,6'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,7'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,8'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,9'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/ECF_r1_P00004218_S0001.nii,10'
                                         }
                                         {
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,1'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,2'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,3'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,4'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,5'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,6'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,7'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,8'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,9'
-                                        '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/P00004218_S0001_ECF_r2_1.nii,10'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,1'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,2'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,3'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,4'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,5'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,6'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,7'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,8'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,9'
+                                        '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/ECF_r2_P00004218_S0001.nii,10'
                                         }
                                         }';
 %%
@@ -64,28 +60,28 @@ matlabbatch{2}.spm.temporal.st.prefix = 'a';
 %%
 matlabbatch{3}.spm.spatial.realign.estwrite.data = {
                                                     {
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,1'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,2'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,3'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,4'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,5'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,6'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,7'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,8'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,9'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,10'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,1'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,2'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,3'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,4'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,5'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,6'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,7'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,8'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,9'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,10'
                                                     }
                                                     {
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,1'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,2'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,3'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,4'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,5'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,6'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,7'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,8'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,9'
-                                                    '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,10'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,1'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,2'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,3'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,4'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,5'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,6'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,7'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,8'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,9'
+                                                    '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,10'
                                                     }
                                                     }';
 %%
@@ -101,60 +97,60 @@ matlabbatch{3}.spm.spatial.realign.estwrite.roptions.interp = 4;
 matlabbatch{3}.spm.spatial.realign.estwrite.roptions.wrap = [0 0 0];
 matlabbatch{3}.spm.spatial.realign.estwrite.roptions.mask = 1;
 matlabbatch{3}.spm.spatial.realign.estwrite.roptions.prefix = 'r';
-matlabbatch{4}.spm.spatial.coreg.estimate.ref = {'/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/mP00004218_S0001_ECF_r1_1.nii'};
-matlabbatch{4}.spm.spatial.coreg.estimate.source = {'/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/meanaP00004218_S0001_ECF_r1_1.nii,1'};
+matlabbatch{4}.spm.spatial.coreg.estimate.ref = {'/share/data/studies/CogRes/Subjects/P00004218/S0001/T1/mT1_P00004218_S0001.nii'};
+matlabbatch{4}.spm.spatial.coreg.estimate.source = {'/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/meanaECF_r1_P00004218_S0001.nii,1'};
 %%
 matlabbatch{4}.spm.spatial.coreg.estimate.other = {
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,1'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,2'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,3'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,4'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,5'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,6'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,7'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,8'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,9'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,10'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,1'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,2'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,3'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,4'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,5'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,6'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,7'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,8'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,9'
-                                                   '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,10'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,1'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,2'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,3'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,4'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,5'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,6'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,7'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,8'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,9'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,10'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,1'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,2'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,3'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,4'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,5'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,6'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,7'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,8'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,9'
+                                                   '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,10'
                                                    };
 %%
 matlabbatch{4}.spm.spatial.coreg.estimate.eoptions.cost_fun = 'nmi';
 matlabbatch{4}.spm.spatial.coreg.estimate.eoptions.sep = [4 2];
 matlabbatch{4}.spm.spatial.coreg.estimate.eoptions.tol = [0.02 0.02 0.02 0.001 0.001 0.001 0.01 0.01 0.01 0.001 0.001 0.001];
 matlabbatch{4}.spm.spatial.coreg.estimate.eoptions.fwhm = [7 7];
-matlabbatch{5}.spm.spatial.normalise.write.subj.matname = {'/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/P00004218_S0001_ECF_r1_1_seg_sn.mat'};
+matlabbatch{5}.spm.spatial.normalise.write.subj.matname = {'/share/data/studies/CogRes/Subjects/P00004218/S0001/T1/T1_P00004218_S0001_seg_sn.mat'};
 %%
 matlabbatch{5}.spm.spatial.normalise.write.subj.resample = {
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/meanaP00004218_S0001_ECF_r1_1.nii,1'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,1'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,2'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,3'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,4'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,5'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,6'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,7'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,8'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,9'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/aP00004218_S0001_ECF_r1_1.nii,10'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,1'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,2'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,3'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,4'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,5'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,6'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,7'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,8'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,9'
-                                                            '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/aP00004218_S0001_ECF_r2_1.nii,10'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/meanaECF_r1_P00004218_S0001.nii,1'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,1'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,2'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,3'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,4'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,5'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,6'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,7'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,8'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,9'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/aECF_r1_P00004218_S0001.nii,10'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,1'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,2'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,3'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,4'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,5'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,6'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,7'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,8'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,9'
+                                                            '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/aECF_r2_P00004218_S0001.nii,10'
                                                             };
 %%
 matlabbatch{5}.spm.spatial.normalise.write.roptions.preserve = 0;
@@ -166,27 +162,27 @@ matlabbatch{5}.spm.spatial.normalise.write.roptions.wrap = [0 0 0];
 matlabbatch{5}.spm.spatial.normalise.write.roptions.prefix = 'w';
 %%
 matlabbatch{6}.spm.spatial.smooth.data = {
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/wmeanaP00004218_S0001_ECF_r1_1.nii,1'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,1'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,2'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,3'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,4'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,5'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,6'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,7'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,8'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,9'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r1/waP00004218_S0001_ECF_r1_1.nii,10'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,1'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,2'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,3'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,4'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,5'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,6'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,7'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,8'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,9'
-                                          '/share/data/data10/CogRes_old/Subjects/P00004218/S0001/ECF_r2/waP00004218_S0001_ECF_r2_1.nii,10'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/wmeanaECF_r1_P00004218_S0001.nii,1'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,1'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,2'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,3'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,4'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,5'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,6'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,7'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,8'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,9'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r1/waECF_r1_P00004218_S0001.nii,10'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,1'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,2'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,3'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,4'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,5'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,6'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,7'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,8'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,9'
+                                          '/share/data/studies/CogRes/Subjects/P00004218/S0001/ECF_r2/waECF_r2_P00004218_S0001.nii,10'
                                           };
 %%
 matlabbatch{6}.spm.spatial.smooth.fwhm = [8 8 8];
